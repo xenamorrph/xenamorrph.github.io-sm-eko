@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		<meta name="format-detection" content="telephone=no">
+		<script src="photo_files/jquery.min_002.js" type="text/javascript"></script>
+		<script src="photo_files/popup.js"></script>
+		<script src="photo_files/_dev.js"></script>
+		<title>
+		</title>
+		<title>Поиск</title>
+		<link rel="stylesheet" href="photo_files/template.css">
+		<link rel="stylesheet" href="photo_files/style.css">
+		<link rel="stylesheet" href="photo_files/swiper-bundle.min.css">
+		<script src="photo_files/jquery.min.js" type="text/javascript"></script>
+		<script src="photo_files/slick.min.js" type="text/javascript"></script>
+		<script src="photo_files/jquery.maskedinput.min.js" type="text/javascript"></script>
+		<script src="photo_files/script.js" type="text/javascript"></script>
+		<script src="photo_files/jquery.autocomplete.min.js" type="text/javascript"></script>
+		<script src="photo_files/script_002.js" type="text/javascript"></script>
+		<script src="photo_files/swiper-bundle.min.js" type="text/javascript"></script>
+		<script src="photo_files/b-photo.js" type="text/javascript"></script>
+		<script src="photo_files/fslightbox.js" type="text/javascript"></script>
+	<style class="fslightbox-styles">.fslightbox-absoluted{position:absolute;top:0;left:0}.fslightbox-fade-in{animation:fslightbox-fade-in .3s cubic-bezier(0,0,.7,1)}.fslightbox-fade-out{animation:fslightbox-fade-out .3s ease}.fslightbox-fade-in-strong{animation:fslightbox-fade-in-strong .3s cubic-bezier(0,0,.7,1)}.fslightbox-fade-out-strong{animation:fslightbox-fade-out-strong .3s ease}@keyframes fslightbox-fade-in{from{opacity:.65}to{opacity:1}}@keyframes fslightbox-fade-out{from{opacity:.35}to{opacity:0}}@keyframes fslightbox-fade-in-strong{from{opacity:.3}to{opacity:1}}@keyframes fslightbox-fade-out-strong{from{opacity:1}to{opacity:0}}.fslightbox-cursor-grabbing{cursor:grabbing}.fslightbox-full-dimension{width:100%;height:100%}.fslightbox-open{overflow:hidden;height:100%}.fslightbox-flex-centered{display:flex;justify-content:center;align-items:center}.fslightbox-opacity-0{opacity:0!important}.fslightbox-opacity-1{opacity:1!important}.fslightbox-scrollbarfix{padding-right:17px}.fslightbox-transform-transition{transition:transform .3s}.fslightbox-container{font-family:Arial,sans-serif;position:fixed;top:0;left:0;background:linear-gradient(rgba(30,30,30,.9),#000 1810%);touch-action:pinch-zoom;z-index:1000000000;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent}.fslightbox-container *{box-sizing:border-box}.fslightbox-svg-path{transition:fill .15s ease;fill:#ddd}.fslightbox-nav{height:45px;width:100%;position:absolute;top:0;left:0}.fslightbox-slide-number-container{display:flex;justify-content:center;align-items:center;position:relative;height:100%;font-size:15px;color:#d7d7d7;z-index:0;max-width:55px;text-align:left}.fslightbox-slide-number-container .fslightbox-flex-centered{height:100%}.fslightbox-slash{display:block;margin:0 5px;width:1px;height:12px;transform:rotate(15deg);background:#fff}.fslightbox-toolbar{position:absolute;z-index:3;right:0;top:0;height:100%;display:flex;background:rgba(35,35,35,.65)}.fslightbox-toolbar-button{height:100%;width:45px;cursor:pointer}.fslightbox-toolbar-button:hover .fslightbox-svg-path{fill:#fff}.fslightbox-slide-btn-container{display:flex;align-items:center;padding:12px 12px 12px 6px;position:absolute;top:50%;cursor:pointer;z-index:3;transform:translateY(-50%)}@media (min-width:476px){.fslightbox-slide-btn-container{padding:22px 22px 22px 6px}}@media (min-width:768px){.fslightbox-slide-btn-container{padding:30px 30px 30px 6px}}.fslightbox-slide-btn-container:hover .fslightbox-svg-path{fill:#f1f1f1}.fslightbox-slide-btn{padding:9px;font-size:26px;background:rgba(35,35,35,.65)}@media (min-width:768px){.fslightbox-slide-btn{padding:10px}}@media (min-width:1600px){.fslightbox-slide-btn{padding:11px}}.fslightbox-slide-btn-container-previous{left:0}@media (max-width:475.99px){.fslightbox-slide-btn-container-previous{padding-left:3px}}.fslightbox-slide-btn-container-next{right:0;padding-left:12px;padding-right:3px}@media (min-width:476px){.fslightbox-slide-btn-container-next{padding-left:22px}}@media (min-width:768px){.fslightbox-slide-btn-container-next{padding-left:30px}}@media (min-width:476px){.fslightbox-slide-btn-container-next{padding-right:6px}}.fslightbox-down-event-detector{position:absolute;z-index:1}.fslightbox-slide-swiping-hoverer{z-index:4}.fslightbox-invalid-file-wrapper{font-size:22px;color:#eaebeb;margin:auto}.fslightbox-video{object-fit:cover}.fslightbox-youtube-iframe{border:0}.fslightboxl{display:block;margin:auto;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:67px;height:67px}.fslightboxl div{box-sizing:border-box;display:block;position:absolute;width:54px;height:54px;margin:6px;border:5px solid;border-color:#999 transparent transparent transparent;border-radius:50%;animation:fslightboxl 1.2s cubic-bezier(.5,0,.5,1) infinite}.fslightboxl div:nth-child(1){animation-delay:-.45s}.fslightboxl div:nth-child(2){animation-delay:-.3s}.fslightboxl div:nth-child(3){animation-delay:-.15s}@keyframes fslightboxl{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}.fslightbox-source{position:relative;z-index:2;opacity:0}</style></head>
+	<body><script id="__bs_script__">//<![CDATA[
+  (function() {
+    try {
+      var script = document.createElement('script');
+      if ('async') {
+        script.async = true;
+      }
+      script.src = '/browser-sync/browser-sync-client.js?v=2.29.3'.replace("HOST", location.hostname);
+      if (document.body) {
+        document.body.appendChild(script);
+      } else if (document.head) {
+        document.head.appendChild(script);
+      }
+    } catch (e) {
+      console.error("Browsersync: could not append script tag", e);
+    }
+  })()
+//]]></script><script async="" src="photo_files/browser-sync-client.js"></script>
+
+		<div class="wrapper index-page">
+			<div class="wrapper__box">
+				<header class="header js-header-stick">
+					<div class="header__top">
+						<div class="header__top-wrap"><a class="header__logo" href="http://localhost:3000/photo/index.html">
+								<picture> <img src="photo_files/logo_002.svg" loading="lazy" alt="Логотип"></picture></a>
+							<div class="header__call">
+								<div class="header__caption">Круглосуточная запись по телефону:</div><a class="header__phone" href="tel:+74951531851">+7 495 153-18-51</a>
+							</div>
+							<div class="header__buttons header__two-button"><a class="header__button js-open-popup" data-target=".popup-form-callback" href="#">Заказать звонок</a><a class="header__button header__button_sign" href="#">Записаться онлайн</a></div><a class="header__button_lk" href="#"><span>Личный кабинет</span></a>
+						</div>
+					</div>
+					<div class="header__bottom">
+						<div class="header__bottom-wrap">
+							<div class="header__search">
+								<div class="header__search-row">
+									<form method="GET" action="">
+										<input id="header-search" name="q" type="text" placeholder="Поиск по сайту">
+										<button type="submit"></button>
+										<div class="header__search-toggle"></div>
+										<div class="header__search-loading"></div>
+										<div class="header__search-result"></div>
+									</form>
+								</div>
+							</div>
+							<nav class="header__menu">
+								<ul class="header__menu-box">
+									<li><a class="header__link" href="#">О центре</a></li>
+									<li><a class="header__link" href="http://localhost:3000/photo/services.html">Услуги и цены</a>
+										<div class="header__submenu">
+											<ul>
+												<li><a href="#"><img src="photo_files/h-menu__link-icon-1.svg"><span>Диагностика причин бесплодия</span></a></li>
+												<li><a href="#"><img src="photo_files/h-menu__link-icon-2.svg"><span>Лечение бесплодия</span></a></li>
+												<li><a href="#"><img src="photo_files/h-menu__link-icon-3.svg"><span>Внутриматочная инсеминация (ВМИ)</span></a></li>
+												<li><a href="#"><img src="photo_files/h-menu__link-icon-4.svg"><span>ЭКО (экстракорпоральное оплодотворение)</span></a></li>
+												<li><a href="#"><img src="photo_files/h-menu__link-icon-5.svg"><span>Генетические исследования</span></a></li>
+												<li><a href="#"><img src="photo_files/h-menu__link-icon-6.svg"><span>Программы с донорской яйцеклеткой (ооцитами)</span></a></li>
+												<li><a href="#"><img src="photo_files/h-menu__link-icon-7.svg"><span>Эмбриология</span></a></li>
+												<li><a href="#"><img src="photo_files/h-menu__link-icon-8.svg"><span>Криоконсервация</span></a></li>
+												<li><a href="#"><img src="photo_files/h-menu__link-icon-9.svg"><span>Хирургическое лечение бесплодия</span></a></li>
+												<li><a href="#"><img src="photo_files/h-menu__link-icon-10.svg"><span>Ведение беременности</span></a></li>
+											</ul>
+										</div>
+									</li>
+									<li><a class="header__link" href="http://localhost:3000/photo/doctor.html">Врачи</a></li>
+									<li><a class="header__link" href="http://localhost:3000/photo/actions.html">Акции</a></li>
+									<li><a class="header__link" href="http://localhost:3000/photo/patients.html">Пациентам</a>
+										<div class="header__submenu">
+											<ul>
+												<li><a href="#">Цены</a></li>
+												<li><a href="http://localhost:3000/photo/juridical.html">Налоговые вычеты</a></li>
+												<li><a href="#">Кредит</a></li>
+												<li><a href="http://localhost:3000/photo/articles.html">Статья</a></li>
+												<li><a href="http://localhost:3000/photo/answers.html">Ответы на вопросы</a></li>
+												<li><a href="http://localhost:3000/photo/diseases.html">Заболевания</a></li>
+											</ul>
+										</div>
+									</li>
+									<li><a class="header__link" href="http://localhost:3000/photo/feedback.html">Отзывы</a></li>
+									<li><a class="header__link" href="http://localhost:3000/photo/contacts.html">Контакты</a></li>
+									<li class="header__menu-add"><a class="header__social-link" href="#"> <img src="photo_files/ico-vk.svg"></a><a class="header__social-link" href="#"> <img src="photo_files/ico-ok.svg"></a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="header__buttons header__mob-button header__two-button"><a class="header__button" href="#">Личный кабинет</a><a class="header__button header__button_sign" href="#">Записаться онлайн</a></div>
+				</header>
+				<section class="b-banner">
+					<div class="container"><a class="b-banner__image" href="#">
+							<picture>
+								<source srcset="photo_files/b-banner-mobile.png 1x" media="(max-width: 768px)" loading="lazy"><img src="photo_files/b-banner.jpg" loading="lazy">
+							</picture></a></div>
+				</section>
+				<main class="main-content">
+					<div class="breadcrumbs">
+						<div class="container">
+							<div class="breadcrumbs__wrap">
+								<ul class="breadcrumbs__list">
+									<li class="breadcrumbs__home"><a class="breadcrumbs__link breadcrumbs__link_home" href="#" title="">Главная</a></li>
+									<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#" title="">Название раздела</a></li>
+									<li class="breadcrumbs__item"><span class="breadcrumbs__current">Название активной страницы</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+<section class="b-headline">
+	<div class="container">
+		<div class="b-headline__title"><a class="b-headline__go-back" href="#"></a>
+			<h1>Заголовок страницы</h1>
+		</div>
+	</div>
+</section>
+<section class="b-photo">
+	<div class="container">
+		<div class="b-photo__items"><a class="b-photo__item" data-fslightbox="gallery" href="http://localhost:3000/i/b-photo-1.jpg" style="display: block;">
+				<picture><img src="photo_files/b-photo-1.jpg" loading="lazy"></picture></a><a class="b-photo__item" data-fslightbox="gallery" href="http://localhost:3000/i/b-photo-2.jpg" style="display: block;">
+				<picture><img src="photo_files/b-photo-2.jpg" loading="lazy"></picture></a><a class="b-photo__item" data-fslightbox="gallery" href="http://localhost:3000/i/b-photo-3.jpg" style="display: block;">
+				<picture><img src="photo_files/b-photo-3.jpg" loading="lazy"></picture></a><a class="b-photo__item" data-fslightbox="gallery" href="http://localhost:3000/i/b-photo-4.jpg" style="display: block;">
+				<picture><img src="photo_files/b-photo-4.jpg" loading="lazy"></picture></a><a class="b-photo__item" data-fslightbox="gallery" href="http://localhost:3000/i/b-photo-5.jpg" style="display: block;">
+				<picture><img src="photo_files/b-photo-5.jpg" loading="lazy"></picture></a><a class="b-photo__item" data-fslightbox="gallery" href="http://localhost:3000/i/b-photo-6.jpg" style="display: block;">
+				<picture><img src="photo_files/b-photo-6.jpg" loading="lazy"></picture></a><a class="b-photo__item" data-fslightbox="gallery" href="http://localhost:3000/i/b-photo-7.jpg" style="display: block;">
+				<picture><img src="photo_files/b-photo-7.jpg" loading="lazy"></picture></a><a class="b-photo__item" data-fslightbox="gallery" href="http://localhost:3000/i/b-photo-8.jpg" style="display: block;">
+				<picture><img src="photo_files/b-photo-8.jpg" loading="lazy"></picture></a><a class="b-photo__item" data-fslightbox="gallery" href="http://localhost:3000/i/b-photo-9.jpg" style="display: block;">
+				<picture><img src="photo_files/b-photo-9.jpg" loading="lazy"></picture></a><a class="b-photo__item" data-fslightbox="gallery" ref="/i/b-photo-10.jpg" style="display: block;">
+				<picture><img src="photo_files/b-photo-10.jpg" loading="lazy"></picture></a><a class="b-photo__item" data-fslightbox="gallery" ref="/i/b-photo-11.jpg" style="display: block;">
+				<picture><img src="photo_files/b-photo-11.jpg" loading="lazy"></picture></a><a class="b-photo__item" data-fslightbox="gallery" ref="/i/b-photo-12.jpg" style="display: block;">
+				<picture><img src="photo_files/b-photo-12.jpg" loading="lazy"></picture></a><a class="b-photo__item" data-fslightbox="gallery" ref="/i/b-photo-13.jpg" style="display: block;">
+				<picture><img src="photo_files/b-photo-13.jpg" loading="lazy"></picture></a><a class="b-photo__item" data-fslightbox="gallery" ref="/i/b-photo-14.jpg" style="display: block;">
+				<picture><img src="photo_files/b-photo-14.jpg" loading="lazy"></picture></a><a class="b-photo__item" data-fslightbox="gallery" ref="/i/b-photo-15.jpg" style="display: block;">
+				<picture><img src="photo_files/b-photo-15.jpg" loading="lazy"></picture></a><a class="b-photo__item" data-fslightbox="gallery" ref="/i/b-photo-16.jpg" style="display: block;">
+				<picture><img src="photo_files/b-photo-16.jpg" loading="lazy"></picture></a><a class="b-photo__item" data-fslightbox="gallery" ref="/i/b-photo-17.jpg" style="display: block;">
+				<picture><img src="photo_files/b-photo-17.jpg" loading="lazy"></picture></a></div>
+		<div class="b-photo__show">Показать больше</div>
+	</div>
+</section>
+<section class="b-licenses">
+	<div class="container">
+		<div class="b-licenses__header">
+			<h2 class="page-title-2"></h2>
+		</div>
+		<div class="b-licenses__container">
+			<div class="b-licenses__desc">
+				<div class="b-licenses__left">
+					<picture><img src="photo_files/b-licenses-1.png" loading="lazy"></picture>
+				</div>
+				<div class="b-licenses__right">Мы осуществляем деятельность на основании медицинских лицензий<br> в соответствии с рекомендациями Минздрава
+					<div class="b-licenses__buttons"><a class="b-licenses__button" href="#">Посмотреть лицензии</a><a class="b-licenses__button" href="#">Правовая информация</a></div>
+				</div>
+			</div>
+			<div class="b-licenses__image">
+				<picture><img src="photo_files/b-licenses-2.png" loading="lazy"></picture>
+			</div>
+		</div>
+	</div>
+</section>
+				</main>
+				<div class="footer">
+					<footer>
+						<div class="footer__top">
+							<div class="container">
+								<div class="footer__cols">
+									<div class="footer__col">
+										<div class="footer__title">Репродуктивный центр</div>
+										<div class="footer__menu">
+											<ul>
+												<li><a href="http://localhost:3000/photo/about.html">О центре</a></li>
+												<li><a href="http://localhost:3000/photo/services.html">Услуги</a></li>
+												<li><a href="http://localhost:3000/photo/services.html">Врачи</a></li>
+												<li><a href="http://localhost:3000/photo/openday.html">Акции</a></li>
+												<li><a href="#">Анализы</a></li>
+												<li><a href="#">Пациентам</a></li>
+												<li><a href="#">Отзывы</a></li>
+												<li><a href="#">Контакты</a></li>
+												<li><a href="#">Карта сайта</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="footer__col">
+										<div class="footer__title">Популярное</div>
+										<div class="footer__menu">
+											<ul>
+												<li><a href="#">Акции</a></li>
+												<li><a href="#">ЭКО</a></li>
+												<li><a href="#">Дианостика бесплодия</a></li>
+												<li><a href="#">Лечение бесплодия</a></li>
+												<li><a href="#">Планирование беременности</a></li>
+												<li><a href="#">УЗИ</a></li>
+												<li><a href="#">Статьи</a></li>
+												<li><a href="#">Заболевания</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="footer__col">
+										<div class="footer__title">Наши клиники</div>
+										<div class="footer__menu">
+											<ul>
+												<li><a href="#">Детские клиники</a></li>
+												<li><a href="#">Центр хирургии</a></li>
+												<li><a href="#">Пластическая хирургия</a></li>
+												<li><a href="#">Стоматология</a></li>
+												<li><a href="#">Центр ЭКО</a></li>
+												<li><a href="#">Онкологический центр</a></li>
+												<li><a href="#">Косметология</a></li>
+												<li><a href="#">Скорая помощь</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="footer__col">
+										<div class="footer__title">Информация</div>
+										<div class="footer__menu">
+											<ul>
+												<li><a href="#">Пациентам</a></li>
+												<li><a href="#">Правовая информация</a></li>
+												<li><a href="#">Лицензия клиник</a></li>
+												<li><a href="#">Политика обработки персональных данных</a></li>
+												<li><a href="#">Вакансии</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="footer__col">
+										<div class="footer__title footer__title_contacts">Контакты</div>
+										<div class="footer__24">Круглосуточная запись по телефону:</div>
+										<div class="footer__phone">
+											 <div class="fc_phone vcard"><a href="#" id="ct_phone_2" class="nb-tlf tel">+7 495 153 18 51</a></div></div><span>Москва, пер.Расковой, д.14/22 (м.Динамо, м.Белорусская)</span>
+										<div class="footer__buttons"><a class="footer__button footer__button_call" href="#">Заказать звонок</a><a class="footer__button footer__button_sign" href="#">Записаться онлайн</a></div>
+										<div class="footer__social">
+											<div class="footer__social_item"><a class="footer__social_link footer__social_link_vk" href="https://vk.com/smclinica" target="_blank" rel="nofollow"></a></div>
+											<div class="footer__social_item"><a class="footer__social_link footer__social_link_tel" href="https://t.me/sm_clinic" target="_blank" rel="nofollow"></a></div>
+											<div class="footer__social_item"><a class="footer__social_link footer__social_link_ok" href="https://ok.ru/smclinica" target="_blank" rel="nofollow"></a></div>
+										</div>
+										<div class="footer__appstore"><a href="#" target="_blank"><img src="photo_files/footer-appstore.png"></a><a href="#" target="_blank"><img src="photo_files/footer-googleplay.png"></a><a href="#" target="_blank"><img src="photo_files/footer-appgallery.png"></a></div>
+										<div class="footer__payments">Мы принимаем к оплате
+											<div class="footer__cards"><img src="photo_files/footer-mir.svg" loading="lazy"><img src="photo_files/footer-visa.svg" loading="lazy"><img src="photo_files/footer-mastercard.svg" loading="lazy"><img src="photo_files/footer-master.svg" loading="lazy"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="footer__bot">
+							<div class="container">
+								<div class="footer__box"><a class="footer__logo"><img src="photo_files/footer-logo.svg"></a>
+									<div class="footer__footnote">
+										<div class="footer__text text">
+											<p>© 2002-2023 ООО «СМ-Клиника»</p>
+											<p>Материалы, размещенные на данной странице, носят 
+информационный характер и предназначены для образовательных целей. 
+Посетители сайта не должны использовать их в качестве медицинских 
+рекомендаций. Определение диагноза и выбор методики лечения остается 
+исключительной прерогативой вашего лечащего врача! ООО «СМ-Клиника» не 
+несёт ответственности за возможные негативные последствия, возникшие в 
+результате использования информации, размещенной на сайте sm-eko.ru</p>
+											<p>ООО «ДЕТЗДРАВ» Лицензия № Л041-01137-77/00555050 от 16.12.2019 г.</p>
+											<p>© 2023 «СМ-Клиника» — репродуктивный центр <br>Политика СМ-Клиника в отношении обработки персональных данных</p>
+										</div>
+										<div class="footer__text">
+											<div class="footer__rate">
+												<div><img src="photo_files/footer-emblem.png"></div>
+												<div>Независимая оценка качества оказания услуг медицинским организациям<a href="#">Участвовать в голосовании</a></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="footer__warning">
+									<div>Имеются противопоказания. Необходимо проконсультироваться со специалистом</div><br><br><br><br>
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+			</div>
+			<div class="popup-win">
+				<div class="popup-win__overlay"></div>
+				<div class="popup-win__wrap">
+					<div class="popup-win__box">
+						<div class="popup-win__close-field js-popup-close"></div>
+									<div class="popup-form popup-form-appointment">
+										<div class="popup-form__wrap">
+											<form class="form popup-form__form js-feedback-submit" method="POST" action="">
+												<div class="popup-form__header">
+													<div class="popup-form__logo"><img src="photo_files/logo_002.svg" loading="lazy"></div>
+													<div class="popup-form__title">Записаться на прием</div>
+													<div class="popup-form__close js-popup-close">
+														<div></div>
+													</div>
+												</div>
+												<div class="popup-form__body">
+													<div class="popup-form__box">
+														<div class="popup-form__row">
+															<input class="popup-form__input _name" name="name" placeholder="Ваше имя">
+														</div>
+														<div class="popup-form__row">
+															<input class="popup-form__input _phone" name="phone" placeholder="Ваш номер телефона *">
+														</div>
+													</div>
+												</div>
+												<div class="popup-form__footer">
+													<div class="popup-form__submit">
+														<button class="popup-form__button" type="submit">Жду звонка</button>
+														<input type="hidden" name="submit" value="appointment-submit">
+													</div>
+													<div class="popup-form__private">Нажимая на кнопку, вы даете согласие на <a href="#">обработку своих персональных данных</a></div>
+												</div>
+												<div class="popup-form__bot">Мы поможем быстро найти то, что Вам нужно!</div>
+											</form>
+										</div>
+									</div>
+									<div class="popup-form popup-form-callback">
+										<div class="popup-form__wrap">
+											<form class="form popup-form__form js-feedback-submit" method="POST" action="">
+												<div class="popup-form__header">
+													<div class="popup-form__logo"><img src="photo_files/logo_002.svg" loading="lazy"></div>
+													<div class="popup-form__title">Хотите, мы вам перезвоним</div>
+													<div class="popup-form__close js-popup-close">
+														<div></div>
+													</div>
+												</div>
+												<div class="popup-form__body">
+													<div class="popup-form__box">
+														<div class="popup-form__row">
+															<input class="popup-form__input _name" name="name" placeholder="Ваше имя">
+														</div>
+														<div class="popup-form__row">
+															<input class="popup-form__input _phone" name="phone" placeholder="Ваш номер телефона *">
+														</div>
+													</div>
+												</div>
+												<div class="popup-form__footer">
+													<div class="popup-form__submit">
+														<button class="popup-form__button" type="submit">Жду звонка</button>
+														<input type="hidden" name="submit" value="callback-submit">
+													</div>
+													<div class="popup-form__private">Нажимая на кнопку, вы даете согласие на <a href="#">обработку своих персональных данных</a></div>
+												</div>
+												<div class="popup-form__bot">Мы поможем быстро найти то, что Вам нужно!</div>
+											</form>
+										</div>
+									</div>
+									<div class="popup-form popup-form-callback-2">
+										<div class="popup-form__wrap">
+											<form class="form popup-form__form js-feedback-submit" method="POST" action="">
+												<div class="popup-form__header">
+													<div class="popup-form__logo"><img src="photo_files/logo_002.svg" loading="lazy"></div>
+													<div class="popup-form__title">Обратный звонок</div>
+													<div class="popup-form__close js-popup-close">
+														<div></div>
+													</div>
+												</div>
+												<div class="popup-form__body">
+													<div class="popup-form__box">
+														<div class="popup-form__row">
+															<input class="popup-form__input _name" name="name" placeholder="Ваше имя">
+														</div>
+														<div class="popup-form__row">
+															<input class="popup-form__input _phone" name="phone" placeholder="Ваш номер телефона *">
+														</div>
+													</div>
+												</div>
+												<div class="popup-form__footer">
+													<div class="popup-form__submit">
+														<button class="popup-form__button" type="submit">Отправить заявку</button>
+														<input type="hidden" name="submit" value="callback-2-submit">
+													</div>
+													<div class="popup-form__private">Нажимая на кнопку, вы даете согласие на <a href="#">обработку своих персональных данных</a>.</div>
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="popup-form popup-form-goback">
+										<div class="popup-form__wrap">
+											<form class="form popup-form__form js-feedback-submit" method="POST" action="">
+												<div class="popup-form__header">
+													<div class="popup-form__logo"><img src="photo_files/logo_002.svg" loading="lazy"></div>
+													<div class="popup-form__title-2">Вы действительно хотите прервать запись?</div>
+													<div class="popup-form__close js-popup-close">
+														<div></div>
+													</div>
+												</div>
+												<div class="popup-form__body">
+													<div class="popup-form__content">
+														<div class="popup-form__caption">Если у вас возникли вопросы, позвоните нам по телефону:</div>
+														<div class="popup-form__phone"><a href="tel:+74954325644">+7 (495) 432-56-44</a></div>
+													</div>
+												</div>
+												<div class="popup-form__footer">
+													<div class="popup-form__buttons">
+														<div class="popup-form__cancel js-popup-close">Прервать</div>
+														<div class="popup-form__continue">Продолжить</div>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="popup-form popup-form-action">
+										<div class="popup-form__wrap">
+											<form class="form popup-form__form js-feedback-submit" method="POST" action="">
+												<div class="popup-form__header">
+													<div class="popup-form__title">Акции в августе</div>
+													<div class="popup-form__subtitle">Срок акции с 01.08.2021 до 31.08.2021</div>
+													<div class="popup-form__close js-popup-close">
+														<div></div>
+													</div>
+												</div>
+												<div class="popup-form__body">
+													<div class="popup-form__banner">
+														<div class="popup-form__banner-text">Бесплатная консультация репродуктолога</div>
+														<div class="popup-form__banner-picture">
+															<picture> <img src="photo_files/popup-form__banner-picture-1.png"></picture>
+														</div>
+													</div>
+													<div class="popup-form__box">
+														<div class="popup-form__row">
+															<input class="popup-form__input _name" name="name" placeholder="Ваше имя">
+														</div>
+														<div class="popup-form__row">
+															<input class="popup-form__input _phone" name="phone" placeholder="Ваш номер телефона *">
+														</div>
+													</div>
+												</div>
+												<div class="popup-form__footer">
+													<div class="popup-form__submit">
+														<button class="popup-form__button" type="submit">Жду звонка</button>
+														<input type="hidden" name="submit" value="callback-submit">
+													</div>
+													<div class="popup-form__private">Нажимая на кнопку, вы даете согласие на <a href="#">обработку своих персональных данных</a></div>
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="popup-form popup-form-feedback">
+										<div class="popup-form__wrap">
+											<form class="form popup-form__form js-feedback-submit" method="POST" action="">
+												<div class="popup-form__header">
+													<div class="popup-form__logo"><img src="photo_files/logo_002.svg" loading="lazy"></div>
+													<div class="popup-form__title">ХОТИТЕ, МЫ ВАМ ПЕРЕЗВОНИМ?</div>
+													<div class="popup-form__close js-popup-close">
+														<div></div>
+													</div>
+												</div>
+												<div class="popup-form__body">
+													<div class="popup-form__box">
+														<div class="popup-form__row">
+															<div class="form__cols">
+																<div class="form__col">
+																	<div class="form__input">
+																		<div class="form__icon">
+																			<div class="i-form-name"></div>
+																		</div>
+																		<input class="popup-form__input _name" name="name" placeholder="Ваше имя">
+																		<div class="form__error i-err"></div>
+																	</div>
+																</div>
+																<div class="form__col">
+																	<div class="form__input">
+																		<div class="form__icon">
+																			<div class="i-form-phone"></div>
+																		</div>
+																		<input class="popup-form__input _phone" name="phone" placeholder="Ваш номер телефона *">
+																		<div class="form__error i-err"></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="popup-form__row">
+															<div class="form__row">
+																<div class="form__textarea">
+																	<div class="form__textarea-title">Ваше сообщение:</div>
+																	<textarea class="popup-form__input" name="msg" value="" placeholder=""></textarea>
+																</div>
+															</div>
+														</div>
+														<div class="popup-form__row">
+															<div class="popup-form__private">Нажимая на кнопку, вы даете согласие на <a href="#">обработку своих персональных данных</a></div>
+														</div>
+													</div>
+												</div>
+												<div class="popup-form__footer">
+													<div class="popup-form__submit">
+														<button class="popup-form__button" type="submit">
+															<div class="btn btn_red">
+																<div class="icon-border">
+																	<div class="i-form-submit"></div>
+																</div><span>Отправить заявку</span>
+															</div>
+														</button>
+														<input type="hidden" name="submit" value="callback-submit">
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="popup-form popup-form-reviews">
+										<div class="popup-form__wrap">
+											<form class="form popup-form__form js-feedback-submit" method="POST" action="">
+												<div class="popup-form__header">
+													<div class="popup-form__icon">
+														<div class="i-feed-blue"></div>
+													</div>
+													<div class="popup-form__title">Оставить отзыв</div>
+													<div class="popup-form__close js-popup-close">
+														<div></div>
+													</div>
+												</div>
+												<div class="popup-form__body">
+													<div class="popup-form__text">Общество с ограниченной ответственностью Клиника «Центр ЭКО» оказывает помощь в лечении всех форм мужского и женского бесплодия,</div>
+													<div class="popup-form__box">
+														<div class="popup-form__row">
+															<div class="form__cols">
+																<div class="form__col">
+																	<div class="form__input">
+																		<div class="form__icon">
+																			<div class="i-form-name"></div>
+																		</div>
+																		<input class="popup-form__input _name" name="name" placeholder="Ваше имя">
+																		<div class="form__error i-err"></div>
+																	</div>
+																</div>
+																<div class="form__col">
+																	<div class="form__input">
+																		<div class="form__icon">
+																			<div class="i-form-email"></div>
+																		</div>
+																		<input class="popup-form__input _email" name="email" placeholder="Ваша почта">
+																		<div class="form__error i-err"></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="popup-form__row">
+															<div class="form__row">
+																<div class="form__textarea">
+																	<div class="form__textarea-title">Ваш отзыв:</div>
+																	<textarea class="popup-form__input" name="msg" value="" placeholder=""></textarea>
+																</div>
+															</div>
+														</div>
+														<div class="popup-form__row">
+															<div class="popup-form__private">
+																<div class="form__checkbox form__checkbox_dark">
+																	<input class="form__checkbox-input _cb-req" type="checkbox" name="private" id="private-popup-3" checked="checked">
+																	<label class="form__checkbox-label fs-12" for="private-popup-3">Я принимаю <a href="http://localhost:3000/photo/terms.html">Соглашение о конфиденциальности личной информации</a> , даю согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности.</label>
+																	<div class="form__error i-err">Ошибка</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="popup-form__footer">
+													<div class="popup-form__submit">
+														<button class="popup-form__button" type="submit">
+															<div class="btn btn_red">
+																<div class="icon-border">
+																	<div class="i-form-submit"></div>
+																</div><span>Отправить отзыв</span>
+															</div>
+														</button>
+														<input type="hidden" name="submit" value="review-submit">
+													</div>
+												</div>
+												<div class="form__loading">
+													<div class="form__loading-bg">Отправка<br>данных...</div>
+												</div>
+											</form>
+										</div>
+									</div>
+						<!--+question-form()-->
+						<!--+feedback-doctor-form()-->
+						<!--+success-form()-->
+									<div class="popup-form popup-form-search">
+										<div class="popup-form__wrap">
+											<div class="popup-form__form">
+												<div class="mobile-search">
+													<div class="mobile-search__wrap">
+														<div class="mobile-search__goback js-popup-close"></div>
+														<div class="mobile-search__box">
+															<div>
+																<input class="mobile-search__input" id="mobile-search" type="text" name="s" placeholder="Поиск по сайту">
+															</div>
+															<div class="mobile-search__reset"></div>
+														</div>
+														<div class="mobile-search__result"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="popup-form popup-form-menu">
+										<div class="popup-info">
+											<div class="popup-form__close js-popup-close">
+												<div></div>
+											</div>
+											<div class="popup-info__body">
+												<div class="popup-info__menu"><a class="js-goto js-popup-close" href="#eko">Об Эко</a><a class="js-goto js-popup-close" href="#about">О клинике</a><a class="js-goto js-popup-close" href="#programs">Программы</a><a class="js-goto js-popup-close" href="#price">Цены</a><a class="js-goto js-popup-close" href="#reviews">Отзывы</a></div>
+											</div>
+										</div>
+									</div>
+									<div class="popup-form popup-form-worktime">
+										<div class="popup-form__wrap">
+											<div class="popup-form__form popup-form__form_bg-white">
+												<div class="popup-info__header"><img class="popup-info__icon" src="photo_files/clock.svg"><img class="popup-info__logo" src="photo_files/logo.svg">
+													<div class="popup-form__close js-popup-close">
+														<div></div>
+													</div>
+												</div>
+												<div class="popup-info__body">
+													<div class="popup-info__title">Время работы:</div>
+													<div class="popup-info__text">
+														Пн-пт: <span>9:00 - 21:00</span><br>
+														Сб: <span>9:00 - 20:00</span><br>
+														Вс: <span>9:00 - 19:00</span>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="popup-form popup-form-modal">
+										<div class="popup-form__wrap">
+											<div class="popup-form__form popup-form__form_bg-white">
+												<div class="popup-info__header"><img class="popup-info__icon" src="photo_files/info.svg">
+													<div class="popup-form__close js-popup-close">
+														<div></div>
+													</div>
+												</div>
+												<div class="popup-info__body"></div>
+											</div>
+										</div>
+									</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+</body></html>

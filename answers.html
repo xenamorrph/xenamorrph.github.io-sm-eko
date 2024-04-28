@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		<meta name="format-detection" content="telephone=no">
+		<script src="answers_files/jquery.min_002.js" type="text/javascript"></script>
+		<script src="answers_files/popup.js"></script>
+		<script src="answers_files/_dev.js"></script>
+		<title>
+		</title>
+		<title>Поиск</title>
+		<link rel="stylesheet" href="answers_files/template.css">
+		<link rel="stylesheet" href="answers_files/style.css">
+		<link rel="stylesheet" href="answers_files/swiper-bundle.min.css">
+		<script src="answers_files/jquery.min.js" type="text/javascript"></script>
+		<script src="answers_files/swiper-bundle.min.js" type="text/javascript"></script>
+		<script src="answers_files/slick.min.js" type="text/javascript"></script>
+		<script src="answers_files/jquery.maskedinput.min.js" type="text/javascript"></script>
+		<script src="answers_files/script.js" type="text/javascript"></script>
+		<script src="answers_files/jquery.autocomplete.min.js" type="text/javascript"></script>
+		<script src="answers_files/script_002.js" type="text/javascript"></script>
+		<script src="answers_files/b-gallery.js" type="text/javascript"></script>
+		<script src="answers_files/swiper-bundle.min.js" type="text/javascript"></script>
+		<script src="answers_files/b-questions.js" type="text/javascript"></script>
+	</head>
+	<body><script id="__bs_script__">//<![CDATA[
+  (function() {
+    try {
+      var script = document.createElement('script');
+      if ('async') {
+        script.async = true;
+      }
+      script.src = '/browser-sync/browser-sync-client.js?v=2.29.3'.replace("HOST", location.hostname);
+      if (document.body) {
+        document.body.appendChild(script);
+      } else if (document.head) {
+        document.head.appendChild(script);
+      }
+    } catch (e) {
+      console.error("Browsersync: could not append script tag", e);
+    }
+  })()
+//]]></script><script async="" src="answers_files/browser-sync-client.js"></script>
+
+		<div class="wrapper index-page">
+			<div class="wrapper__box">
+				<header class="header js-header-stick">
+					<div class="header__top">
+						<div class="header__top-wrap"><a class="header__logo" href="http://localhost:3000/answers/index.html">
+								<picture> <img src="answers_files/logo.svg" loading="lazy" alt="Логотип"></picture></a>
+							<div class="header__call">
+								<div class="header__caption">Круглосуточная запись по телефону:</div><a class="header__phone" href="tel:+74951531851">+7 495 153-18-51</a>
+							</div>
+							<div class="header__buttons header__two-button"><a class="header__button js-open-popup" data-target=".popup-form-callback" href="#">Заказать звонок</a><a class="header__button header__button_sign" href="#">Записаться онлайн</a></div><a class="header__button_lk" href="#"><span>Личный кабинет</span></a>
+						</div>
+					</div>
+					<div class="header__bottom">
+						<div class="header__bottom-wrap">
+							<div class="header__search">
+								<div class="header__search-row">
+									<form method="GET" action="">
+										<input id="header-search" name="q" type="text" placeholder="Поиск по сайту">
+										<button type="submit"></button>
+										<div class="header__search-toggle"></div>
+										<div class="header__search-loading"></div>
+										<div class="header__search-result"></div>
+									</form>
+								</div>
+							</div>
+							<nav class="header__menu">
+								<ul class="header__menu-box">
+									<li><a class="header__link" href="#">О центре</a></li>
+									<li><a class="header__link" href="http://localhost:3000/answers/services.html">Услуги и цены</a>
+										<div class="header__submenu">
+											<ul>
+												<li><a href="#"><img src="answers_files/h-menu__link-icon-1.svg"><span>Диагностика причин бесплодия</span></a></li>
+												<li><a href="#"><img src="answers_files/h-menu__link-icon-2.svg"><span>Лечение бесплодия</span></a></li>
+												<li><a href="#"><img src="answers_files/h-menu__link-icon-3.svg"><span>Внутриматочная инсеминация (ВМИ)</span></a></li>
+												<li><a href="#"><img src="answers_files/h-menu__link-icon-4.svg"><span>ЭКО (экстракорпоральное оплодотворение)</span></a></li>
+												<li><a href="#"><img src="answers_files/h-menu__link-icon-5.svg"><span>Генетические исследования</span></a></li>
+												<li><a href="#"><img src="answers_files/h-menu__link-icon-6.svg"><span>Программы с донорской яйцеклеткой (ооцитами)</span></a></li>
+												<li><a href="#"><img src="answers_files/h-menu__link-icon-7.svg"><span>Эмбриология</span></a></li>
+												<li><a href="#"><img src="answers_files/h-menu__link-icon-8.svg"><span>Криоконсервация</span></a></li>
+												<li><a href="#"><img src="answers_files/h-menu__link-icon-9.svg"><span>Хирургическое лечение бесплодия</span></a></li>
+												<li><a href="#"><img src="answers_files/h-menu__link-icon-10.svg"><span>Ведение беременности</span></a></li>
+											</ul>
+										</div>
+									</li>
+									<li><a class="header__link" href="http://localhost:3000/answers/doctor.html">Врачи</a></li>
+									<li><a class="header__link" href="http://localhost:3000/answers/actions.html">Акции</a></li>
+									<li><a class="header__link" href="http://localhost:3000/answers/patients.html">Пациентам</a>
+										<div class="header__submenu">
+											<ul>
+												<li><a href="#">Цены</a></li>
+												<li><a href="http://localhost:3000/answers/juridical.html">Налоговые вычеты</a></li>
+												<li><a href="#">Кредит</a></li>
+												<li><a href="http://localhost:3000/answers/articles.html">Статья</a></li>
+												<li><a href="http://localhost:3000/answers/answers.html">Ответы на вопросы</a></li>
+												<li><a href="http://localhost:3000/answers/diseases.html">Заболевания</a></li>
+											</ul>
+										</div>
+									</li>
+									<li><a class="header__link" href="http://localhost:3000/answers/feedback.html">Отзывы</a></li>
+									<li><a class="header__link" href="http://localhost:3000/answers/contacts.html">Контакты</a></li>
+									<li class="header__menu-add"><a class="header__social-link" href="#"> <img src="answers_files/ico-vk.svg"></a><a class="header__social-link" href="#"> <img src="answers_files/ico-ok.svg"></a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="header__buttons header__mob-button header__two-button"><a class="header__button" href="#">Личный кабинет</a><a class="header__button header__button_sign" href="#">Записаться онлайн</a></div>
+				</header>
+				<section class="b-banner">
+					<div class="container"><a class="b-banner__image" href="#">
+							<picture>
+								<source srcset="answers_files/b-banner-mobile.png 1x" media="(max-width: 768px)" loading="lazy"><img src="answers_files/b-banner.jpg" loading="lazy">
+							</picture></a></div>
+				</section>
+				<main class="main-content">
+					<div class="breadcrumbs">
+						<div class="container">
+							<div class="breadcrumbs__wrap">
+								<ul class="breadcrumbs__list">
+									<li class="breadcrumbs__home"><a class="breadcrumbs__link breadcrumbs__link_home" href="#" title="">Главная</a></li>
+									<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#" title="">Название раздела</a></li>
+									<li class="breadcrumbs__item"><span class="breadcrumbs__current">Название активной страницы</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+<section class="b-headline">
+	<div class="container">
+		<div class="b-headline__title"><a class="b-headline__go-back" href="#"></a>
+			<h1>Заголовок страницы</h1>
+		</div>
+	</div>
+</section>
+<section class="b-links-3">
+	<div class="container">
+		<div class="b-links-3__items">
+			<div class="b-links-3__item">
+				<div class="b-links-3__text">
+					<h3 class="b-links-3__subtitle">Общие вопросы</h3><a class="b-links-3__button" href="#">Подробнее</a>
+				</div>
+				<div class="b-links-3__picture">
+					<picture> <img src="answers_files/b-links-3-1.svg"></picture>
+				</div>
+			</div>
+			<div class="b-links-3__item">
+				<div class="b-links-3__text">
+					<h3 class="b-links-3__subtitle">ЭКО</h3><a class="b-links-3__button" href="#">Подробнее</a>
+				</div>
+				<div class="b-links-3__picture">
+					<picture> <img src="answers_files/b-links-3-2.svg"></picture>
+				</div>
+			</div>
+			<div class="b-links-3__item">
+				<div class="b-links-3__text">
+					<h3 class="b-links-3__subtitle">Планирование беременности</h3><a class="b-links-3__button" href="#">Подробнее</a>
+				</div>
+				<div class="b-links-3__picture">
+					<picture> <img src="answers_files/b-links-3-3.svg"></picture>
+				</div>
+			</div>
+			<div class="b-links-3__item">
+				<div class="b-links-3__text">
+					<h3 class="b-links-3__subtitle">Причины бесплодия</h3><a class="b-links-3__button" href="#">Подробнее</a>
+				</div>
+				<div class="b-links-3__picture">
+					<picture> <img src="answers_files/b-links-3-4.svg"></picture>
+				</div>
+			</div>
+			<div class="b-links-3__item">
+				<div class="b-links-3__text">
+					<h3 class="b-links-3__subtitle">Мужской фактор</h3><a class="b-links-3__button" href="#">Подробнее</a>
+				</div>
+				<div class="b-links-3__picture">
+					<picture> <img src="answers_files/b-links-3-5.svg"></picture>
+				</div>
+			</div>
+			<div class="b-links-3__item">
+				<div class="b-links-3__text">
+					<h3 class="b-links-3__subtitle">Программы</h3><a class="b-links-3__button" href="#">Подробнее</a>
+				</div>
+				<div class="b-links-3__picture">
+					<picture> <img src="answers_files/b-links-3-6.svg"></picture>
+				</div>
+			</div>
+			<div class="b-links-3__item">
+				<div class="b-links-3__text">
+					<h3 class="b-links-3__subtitle">УЗИ</h3><a class="b-links-3__button" href="#">Подробнее</a>
+				</div>
+				<div class="b-links-3__picture">
+					<picture> <img src="answers_files/b-links-3-7.svg"></picture>
+				</div>
+			</div>
+			<div class="b-links-3__item">
+				<div class="b-links-3__text">
+					<h3 class="b-links-3__subtitle">Хирургия</h3><a class="b-links-3__button" href="#">Подробнее</a>
+				</div>
+				<div class="b-links-3__picture">
+					<picture> <img src="answers_files/b-links-3-8.svg"></picture>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="b-questions">
+	<div class="container">
+		<div class="b-questions__container">
+			<div class="b-questions__picture">
+				<picture><img src="answers_files/b-links-3-1.svg"></picture>
+			</div>
+			<div class="b-questions__text">
+				<h2 class="b-questions__title">Общие вопросы</h2>
+				<div class="b-questions__list"><a href="#">Влияет ли искусственное оплодотворение на здоровье ребеночка?</a><a href="#">Передается ли бесплодие по наследству?</a><a href="#">Можно ли выбрать пол ребенка при искусственном оплодотворение ЭКО?</a><a href="#">Почему ЭКО считается показанием к кесареву сечению?</a><a href="#">Почему чаще всего не развивается беременность?</a><a href="#">У
+ меня обнаружили АФС высокие титры АТ к кардиолипинам 118, к В2 
+гликопротеинам 232, возможно ли с такими показателями родить ребенка?</a><a href="#">Как определить качество половой клетки перед ЭКО?</a><a href="#">Обнаружены две доброкачественные опухоли в печени, можно ли планировать беременность?</a><a href="#">Не могу забеременеть, с чего и как начинать поиск причин?</a><a href="#">Прием витамина В9 способствует зачатию?</a>
+					<div class="b-questions__hidden"><a href="#">Какой срок считается нормальным, когда девушка не может забеременеть?</a><a href="#">Имеет ли смысл консультация генетика без присутствия мужа?</a><a href="#">Можно ли родить девочку, если у трех братьев в роду мужа рождались лишь мальчики?</a></div>
+				</div>
+				<div class="b-questions__show">Показать еще </div>
+			</div>
+		</div>
+	</div>
+</section>
+					<section class="b-questions">
+						<div class="container">
+							<div class="b-questions__container">
+								<div class="b-questions__picture">
+									<picture><img src="answers_files/b-links-3-2.svg"></picture>
+								</div>
+								<div class="b-questions__text">
+									<h2 class="b-questions__title">ЭКО</h2>
+									<div class="b-questions__list"><a href="#">Влияет ли искусственное оплодотворение на здоровье ребеночка?</a><a href="#">Могут ли отказать в ЭКО?</a><a href="#">Чем крио лучше свежего протокола?</a><a href="#">Сколько дней длится протокол ЭКО?</a><a href="#">Можно ли заниматься сексом во время стимуляции при ЭКО?</a><a href="#">Что такое хэтчинг эмбрионов при ЭКО?</a><a href="#">Какое должно быть самочувствие после ЭКО? На что стоит обратить внимание?</a><a href="#">Как вести себя после ЭКО?</a><a href="#">Как подготовиться к ЭКО?</a><a href="#">Как приживаются эмбрионы после ЭКО?</a>
+										<div class="b-questions__hidden"> <a href="#">Как считается срок беременности при ЭКО?</a><a href="#">Какие гормональные препараты используются перед ЭКО, какие могут быть побочные эффекты от них?</a><a href="#">Нужен ли какой-то перерыв между циклами ЭКО?</a><a href="#">Есть ли вред организму от многих попыток ЭКО?</a><a href="#">Как у женщин берут яйцеклетку для ЭКО?</a><a href="#">Как улучшить яйцеклетки перед ЭКО?</a><a href="#">Как еще, кроме гормональной терапии можно повысить шансы зачатия по ЭКО?</a><a href="#">Как часто можно делать ЭКО?</a><a href="#">Какая разница между коротким и полным циклом ЭКО?</a><a href="#">Как ЭКО влияет на женщину?</a><a href="#">Относится ли ЭКО беременность к группе повышенного риска?</a><a href="#">Как избежать гиперстимуляции яичников при ЭКО?</a><a href="#">Могут ли дети после ЭКО иметь детей?</a><a href="#">Как повысить шансы беременности после ЭКО?</a><a href="#">На какой день МЦ лучше прийти на первую консультацию для планирования ЭКО?</a><a href="#">Сколько нужно ждать, что бы идти на ЭКО для 2-го ребенка?</a><a href="#">У меня эндометриоз, поликистоз и загиб матки. Как правильно подготовиться к ЭКО?</a><a href="#">У меня диагноз СПКЯ, стоит ли делать ЭКО или же можно еще попробовать инсиминацию?</a><a href="#">Повышает ли ЭКО риск развития генетических заболеваний или задержки в развитии ребенка?</a><a href="#">Что такое ТОРЧ-инфекции и является ли обязательным обследование на них перед ЭКО?</a><a href="#">Почему эффективность ЭКО резко снижается после 35 лет?</a><a href="#">Почему ЭКО не всегда заканчивается удачей и что делать дальше?</a><a href="#">Возможно сделать ли ЭКО при первичной аменорее?</a><a href="#">Кому нужно делать ЭКО оплодотворение?</a><a href="#">Реально ли зачать близнецов по ЭКО?</a><a href="#">Если удалена правая трубка, нужна ли делать ЭКО?</a><a href="#">Делала гистеросальпингографию, диагноз: бесплодие 2 степени, что это значит?</a><a href="#">Почему при ЭКО часто делают кесарево сечение?</a><a href="#">Обязательно ли вылечить гепатит, прежде чем приступать к ЭКО?</a></div>
+									</div>
+									<div class="b-questions__show">Показать еще </div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="b-questions">
+						<div class="container">
+							<div class="b-questions__container">
+								<div class="b-questions__picture">
+									<picture><img src="answers_files/b-links-3-3.svg"></picture>
+								</div>
+								<div class="b-questions__text">
+									<h2 class="b-questions__title">Планирование беременности</h2>
+									<div class="b-questions__list"><a href="#">Правда если перед беременностью принимать гормональные препараты, то будет двойня?</a><a href="#">Левая маточная труба малопроходимая, правую удалили, есть шансы забеременеть?</a><a href="#">Мне сделали лапароскопию по поводу наружного генитального эндометриоза (4 ст.), коагулировали очаги, есть ли шанс забеременеть?</a><a href="#">Что делать, если урологу не может поднять показатели спермограммы?</a><a href="#">Можно ли забеременеть при гипоплазии матки 1 степени?</a><a href="#">Была внематочная беременность и выкидыш, что делать чтобы родить ребенка?</a><a href="#">На обследовании дрожжи нашли. Можно ли планировать беременность в следующем цикле?</a><a href="#">У мужа гепатит В, есть ли риск для будущего ребенка?</a><a href="#">Планирую беременность, обнаружили по ПЦР ВПЧ, нужно ли проходить лечение?</a><a href="#">Планирую беременность, поставили диагноз - левосторонний гидросальнинкс, как это может повлиять?</a>
+										<div class="b-questions__hidden"> <a href="#">Вредно ли принимать горячие ванны мужу, если планируем беременность?</a></div>
+									</div>
+									<div class="b-questions__show">Показать еще </div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="b-questions">
+						<div class="container">
+							<div class="b-questions__container">
+								<div class="b-questions__picture">
+									<picture><img src="answers_files/b-links-3-4.svg"></picture>
+								</div>
+								<div class="b-questions__text">
+									<h2 class="b-questions__title">Причины бесплодия</h2>
+									<div class="b-questions__list"><a href="#">Не могу забеременеть, диагноз фиброзное кистозное изменение оболочки яичников, обязательно ли делать операцию?</a><a href="#">3 попытки оплодотворения - эмбрион не приживается, сделали обследование, все в норме, какие могут быть причины?</a><a href="#">Сделала рентген на проходимость маточных труб, все в норме, можно исключить это причину бесплодия?</a><a href="#">Если с мужем несовместимы группы крови, это может быть причиной бесплодия?</a><a href="#">Редкие месячные могут быть причиной бесплодия?</a><a href="#">У меня нашли миому матки и полипы эндометрии появились, предлагают операцию. После этого я смогу забеременеть?</a><a href="#">Тесты на овуляцию не показывают ничего, 6 месяцев не могу забеременеть, что может быть?</a><a href="#">Поставили диагноз поликистоз яичников, можно ли забеременеть при таком диагнозе?</a><a href="#">Мне делали ГСГ, результат- матка расположена слева в гипертантефлексио, что это означает и можно ли забеременеть?</a><a href="#">У меня обнаружили спаечный процесс и гипоплазию матки, можно ли забеременеть с таким диагнозом?</a>
+										<div class="b-questions__hidden"> <a href="#">У нас с мужем определили биологическую несовместимость, это означает что не получится забеременеть естественным путем?</a><a href="#">Влияет ли эндометриоз на способность к зачатию?</a><a href="#">Что делать при трубном бесплодии чтобы забеременеть?</a><a href="#">Не получается забеременеть при повышенном мужском гормоне, что делать?</a><a href="#">Может из за операции на шейке матки быть бесплодие?</a><a href="#">Может ли быть причиной бесплодия седловидная матка?</a><a href="#">Может ли женщина не беременеть из-за привыкания организма к сперме партнера?</a></div>
+									</div>
+									<div class="b-questions__show">Показать еще </div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="b-questions">
+						<div class="container">
+							<div class="b-questions__container">
+								<div class="b-questions__picture">
+									<picture><img src="answers_files/b-links-3-5.svg"></picture>
+								</div>
+								<div class="b-questions__text">
+									<h2 class="b-questions__title">Мужской фактор</h2>
+									<div class="b-questions__list"><a href="#">Диагноз мужа - олигоастенотератозооспермия, агрегация сперматозоидов со слизью. Нужно ли делать дополнительные анализы?</a><a href="#">Зависит ли здоровье будущего ребенка от возраста отца?</a><a href="#">Муж 2 года назад сдавал анализы спермы, нужно ли снова делать анализы для оплодотворения?</a><a href="#">Можно ли зачать ребенка от мужчины перенесшего операцию вазэктомии?</a><a href="#">Если у мужчины есть ребенок, он не бесплодный, ему нужно проходить обследование?</a><a href="#">Делаете ли вы ЭКО в естественном цикле при азооспермии?</a><a href="#">Можно ли вылечить мужское бесплодие после микоплазмоза?</a><a href="#">Не получается забеременеть, муж в детстве болел свинкой, это может быть причиной?</a><a href="#">Может ли быть бесплодие у мужа, от остеопороза?</a><a href="#">Возможно ли мужское бесплодие из-за нарушения обмена веществ?</a>
+										<div class="b-questions__hidden"> <a href="#">Важен ли MAR-тест для мужчины перед планированием беременности?</a><a href="#">Плохое кровообращение в мошонке может быть причиной мужского бесплодия?</a></div>
+									</div>
+									<div class="b-questions__show">Показать еще</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="b-questions">
+						<div class="container">
+							<div class="b-questions__container">
+								<div class="b-questions__picture">
+									<picture><img src="answers_files/b-links-3-6.svg"></picture>
+								</div>
+								<div class="b-questions__text">
+									<h2 class="b-questions__title">Программы</h2>
+									<div class="b-questions__list"><a href="#">Правда если перед беременностью принимать гормональные препараты, то будет двойня?</a><a href="#">Левая маточная труба малопроходимая, правую удалили, есть шансы забеременеть?</a><a href="#">Мне сделали лапароскопию по поводу наружного генитального эндометриоза (4 ст.), коагулировали очаги, есть ли шанс забеременеть?</a><a href="#">Что делать, если урологу не может поднять показатели спермограммы?</a><a href="#">Можно ли забеременеть при гипоплазии матки 1 степени?</a><a href="#">Была внематочная беременность и выкидыш, что делать чтобы родить ребенка?</a><a href="#">На обследовании дрожжи нашли. Можно ли планировать беременность в следующем цикле?</a><a href="#">У мужа гепатит В, есть ли риск для будущего ребенка?</a><a href="#">Планирую беременность, обнаружили по ПЦР ВПЧ, нужно ли проходить лечение?</a><a href="#">Планирую беременность, поставили диагноз - левосторонний гидросальнинкс, как это может повлиять?</a>
+										<div class="b-questions__hidden"> <a href="#">Вредно ли принимать горячие ванны мужу, если планируем беременность?</a></div>
+									</div>
+									<div class="b-questions__show">Показать еще</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="b-questions">
+						<div class="container">
+							<div class="b-questions__container">
+								<div class="b-questions__picture">
+									<picture><img src="answers_files/b-links-3-7.svg"></picture>
+								</div>
+								<div class="b-questions__text">
+									<h2 class="b-questions__title">УЗИ</h2>
+									<div class="b-questions__list"><a href="#">Не могу забеременеть, диагноз фиброзное кистозное изменение оболочки яичников, обязательно ли делать операцию?</a><a href="#">3 попытки оплодотворения - эмбрион не приживается, сделали обследование, все в норме, какие могут быть причины?</a><a href="#">Сделала рентген на проходимость маточных труб, все в норме, можно исключить это причину бесплодия?</a><a href="#">Если с мужем несовместимы группы крови, это может быть причиной бесплодия?</a><a href="#">Редкие месячные могут быть причиной бесплодия?</a><a href="#">У меня нашли миому матки и полипы эндометрии появились, предлагают операцию. После этого я смогу забеременеть?</a><a href="#">Тесты на овуляцию не показывают ничего, 6 месяцев не могу забеременеть, что может быть?</a><a href="#">Поставили диагноз поликистоз яичников, можно ли забеременеть при таком диагнозе?</a><a href="#">Мне делали ГСГ, результат- матка расположена слева в гипертантефлексио, что это означает и можно ли забеременеть?</a><a href="#">У меня обнаружили спаечный процесс и гипоплазию матки, можно ли забеременеть с таким диагнозом?</a>
+										<div class="b-questions__hidden"> <a href="#">У нас с мужем определили биологическую несовместимость, это означает что не получится забеременеть естественным путем?</a><a href="#">Влияет ли эндометриоз на способность к зачатию?</a><a href="#">Что делать при трубном бесплодии чтобы забеременеть?</a><a href="#">Не получается забеременеть при повышенном мужском гормоне, что делать?</a><a href="#">Может из за операции на шейке матки быть бесплодие?</a><a href="#">Может ли быть причиной бесплодия седловидная матка?</a><a href="#">Может ли женщина не беременеть из-за привыкания организма к сперме партнера?</a></div>
+									</div>
+									<div class="b-questions__show">Показать еще</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="b-questions">
+						<div class="container">
+							<div class="b-questions__container">
+								<div class="b-questions__picture">
+									<picture><img src="answers_files/b-links-3-8.svg"></picture>
+								</div>
+								<div class="b-questions__text">
+									<h2 class="b-questions__title">Хирургия</h2>
+									<div class="b-questions__list"><a href="#">Диагноз мужа - олигоастенотератозооспермия, агрегация сперматозоидов со слизью. Нужно ли делать дополнительные анализы?</a><a href="#">Зависит ли здоровье будущего ребенка от возраста отца?</a><a href="#">Муж 2 года назад сдавал анализы спермы, нужно ли снова делать анализы для оплодотворения?</a><a href="#">Можно ли зачать ребенка от мужчины перенесшего операцию вазэктомии?</a><a href="#">Если у мужчины есть ребенок, он не бесплодный, ему нужно проходить обследование?</a><a href="#">Делаете ли вы ЭКО в естественном цикле при азооспермии?</a><a href="#">Можно ли вылечить мужское бесплодие после микоплазмоза?</a><a href="#">Не получается забеременеть, муж в детстве болел свинкой, это может быть причиной?</a><a href="#">Может ли быть бесплодие у мужа, от остеопороза?</a><a href="#">Возможно ли мужское бесплодие из-за нарушения обмена веществ?</a>
+										<div class="b-questions__hidden"> <a href="#">Важен ли MAR-тест для мужчины перед планированием беременности?</a><a href="#">Плохое кровообращение в мошонке может быть причиной мужского бесплодия?</a></div>
+									</div>
+									<div class="b-questions__show">Показать еще</div>
+								</div>
+							</div>
+						</div>
+					</section>
+<section class="b-callback">
+	<div class="container">
+		<div class="b-callback__wrap">
+			<div class="b-callback__form">
+				<form method="POST" action="">
+					<div class="b-callback__content">
+						<div class="b-callback__header">
+							<div class="b-callback__title">Остались вопросы?</div>
+							<div class="b-callback__text">Нужна дополнительная информация? Не нашли ответ на свой вопрос? Оставьте заявку и наши специалисты проконсультируют Вас.</div>
+						</div>
+						<div class="b-callback__body">
+							<div class="b-callback__row">
+								<div class="b-callback__cell">
+									<input class="b-callback__input" name="name" type="text" placeholder="Имя">
+								</div>
+								<div class="b-callback__cell">
+									<input class="b-callback__input" name="phone" type="text" placeholder="Телефон*" required="required">
+								</div>
+								<div class="b-callback__cell">
+									<button class="b-callback__submit" type="submit">Отправить заявку</button>
+								</div>
+							</div>
+						</div>
+						<div class="b-callback__footer">
+							<div class="b-callback__agreement">Нажимая на кнопку, вы даете согласие  на <a href="#">обработку своих персональных данных</a></div>
+						</div>
+						<div class="b-callback__footnote">Запись через сайт является 
+предварительной. Наш сотрудник свяжется с Вами для подтверждения записи к
+ специалисту. Мы гарантируем неразглашение персональных данных и 
+отсутствие рекламных рассылок по указанному вами телефону. Ваши данные 
+необходимы для обеспечения обратной связи и организации записи к 
+специалисту клиники.</div>
+					</div>
+					<div class="b-callback__form-success">Спасибо за оставленную заявку.<br><br>Наш оператор свяжется с вами в ближайшее время.</div>
+				</form>
+			</div>
+			<div class="b-callback__image">
+				<picture><img src="answers_files/b-callback-1.png" loading="lazy"></picture>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="b-statistics">
+	<div class="container">
+		<div class="b-statistics__title">
+			<h2 class="page-title-2">Центр ЭКО в цифрах</h2>
+		</div>
+		<div class="b-statistics__items">
+			<div class="b-statistics__item">
+				<div class="b-statistics__header"><span>до</span>99,9<span>%</span></div><span>снижаем риск рождения детей с хромосомными аномалиями</span>
+			</div>
+			<div class="b-statistics__item">
+				<div class="b-statistics__header">47%</div><span>результативность ЭКО в нашей клинике</span>
+			</div>
+			<div class="b-statistics__item">
+				<div class="b-statistics__header">46%</div><span>пациентов приходят к нам по рекомендации друзей</span>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="b-licenses">
+	<div class="container">
+		<div class="b-licenses__header">
+			<h2 class="page-title-2"></h2>
+		</div>
+		<div class="b-licenses__container">
+			<div class="b-licenses__desc">
+				<div class="b-licenses__left">
+					<picture><img src="answers_files/b-licenses-1.png" loading="lazy"></picture>
+				</div>
+				<div class="b-licenses__right">Мы осуществляем деятельность на основании медицинских лицензий<br> в соответствии с рекомендациями Минздрава
+					<div class="b-licenses__buttons"><a class="b-licenses__button" href="#">Посмотреть лицензии</a><a class="b-licenses__button" href="#">Правовая информация</a></div>
+				</div>
+			</div>
+			<div class="b-licenses__image">
+				<picture><img src="answers_files/b-licenses-2.png" loading="lazy"></picture>
+			</div>
+		</div>
+	</div>
+</section>
+				</main>
+				<div class="footer">
+					<footer>
+						<div class="footer__top">
+							<div class="container">
+								<div class="footer__cols">
+									<div class="footer__col">
+										<div class="footer__title">Репродуктивный центр</div>
+										<div class="footer__menu">
+											<ul>
+												<li><a href="http://localhost:3000/answers/about.html">О центре</a></li>
+												<li><a href="http://localhost:3000/answers/services.html">Услуги</a></li>
+												<li><a href="http://localhost:3000/answers/services.html">Врачи</a></li>
+												<li><a href="http://localhost:3000/answers/openday.html">Акции</a></li>
+												<li><a href="#">Анализы</a></li>
+												<li><a href="#">Пациентам</a></li>
+												<li><a href="#">Отзывы</a></li>
+												<li><a href="#">Контакты</a></li>
+												<li><a href="#">Карта сайта</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="footer__col">
+										<div class="footer__title">Популярное</div>
+										<div class="footer__menu">
+											<ul>
+												<li><a href="#">Акции</a></li>
+												<li><a href="#">ЭКО</a></li>
+												<li><a href="#">Дианостика бесплодия</a></li>
+												<li><a href="#">Лечение бесплодия</a></li>
+												<li><a href="#">Планирование беременности</a></li>
+												<li><a href="#">УЗИ</a></li>
+												<li><a href="#">Статьи</a></li>
+												<li><a href="#">Заболевания</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="footer__col">
+										<div class="footer__title">Наши клиники</div>
+										<div class="footer__menu">
+											<ul>
+												<li><a href="#">Детские клиники</a></li>
+												<li><a href="#">Центр хирургии</a></li>
+												<li><a href="#">Пластическая хирургия</a></li>
+												<li><a href="#">Стоматология</a></li>
+												<li><a href="#">Центр ЭКО</a></li>
+												<li><a href="#">Онкологический центр</a></li>
+												<li><a href="#">Косметология</a></li>
+												<li><a href="#">Скорая помощь</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="footer__col">
+										<div class="footer__title">Информация</div>
+										<div class="footer__menu">
+											<ul>
+												<li><a href="#">Пациентам</a></li>
+												<li><a href="#">Правовая информация</a></li>
+												<li><a href="#">Лицензия клиник</a></li>
+												<li><a href="#">Политика обработки персональных данных</a></li>
+												<li><a href="#">Вакансии</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="footer__col">
+										<div class="footer__title footer__title_contacts">Контакты</div>
+										<div class="footer__24">Круглосуточная запись по телефону:</div>
+										<div class="footer__phone">
+											 <div class="fc_phone vcard"><a href="#" id="ct_phone_2" class="nb-tlf tel">+7 495 153 18 51</a></div></div><span>Москва, пер.Расковой, д.14/22 (м.Динамо, м.Белорусская)</span>
+										<div class="footer__buttons"><a class="footer__button footer__button_call" href="#">Заказать звонок</a><a class="footer__button footer__button_sign" href="#">Записаться онлайн</a></div>
+										<div class="footer__social">
+											<div class="footer__social_item"><a class="footer__social_link footer__social_link_vk" href="https://vk.com/smclinica" target="_blank" rel="nofollow"></a></div>
+											<div class="footer__social_item"><a class="footer__social_link footer__social_link_tel" href="https://t.me/sm_clinic" target="_blank" rel="nofollow"></a></div>
+											<div class="footer__social_item"><a class="footer__social_link footer__social_link_ok" href="https://ok.ru/smclinica" target="_blank" rel="nofollow"></a></div>
+										</div>
+										<div class="footer__appstore"><a href="#" target="_blank"><img src="answers_files/footer-appstore.png"></a><a href="#" target="_blank"><img src="answers_files/footer-googleplay.png"></a><a href="#" target="_blank"><img src="answers_files/footer-appgallery.png"></a></div>
+										<div class="footer__payments">Мы принимаем к оплате
+											<div class="footer__cards"><img src="answers_files/footer-mir.svg" loading="lazy"><img src="answers_files/footer-visa.svg" loading="lazy"><img src="answers_files/footer-mastercard.svg" loading="lazy"><img src="answers_files/footer-master.svg" loading="lazy"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="footer__bot">
+							<div class="container">
+								<div class="footer__box"><a class="footer__logo"><img src="answers_files/footer-logo.svg"></a>
+									<div class="footer__footnote">
+										<div class="footer__text text">
+											<p>© 2002-2023 ООО «СМ-Клиника»</p>
+											<p>Материалы, размещенные на данной странице, носят 
+информационный характер и предназначены для образовательных целей. 
+Посетители сайта не должны использовать их в качестве медицинских 
+рекомендаций. Определение диагноза и выбор методики лечения остается 
+исключительной прерогативой вашего лечащего врача! ООО «СМ-Клиника» не 
+несёт ответственности за возможные негативные последствия, возникшие в 
+результате использования информации, размещенной на сайте sm-eko.ru</p>
+											<p>ООО «ДЕТЗДРАВ» Лицензия № Л041-01137-77/00555050 от 16.12.2019 г.</p>
+											<p>© 2023 «СМ-Клиника» — репродуктивный центр <br>Политика СМ-Клиника в отношении обработки персональных данных</p>
+										</div>
+										<div class="footer__text">
+											<div class="footer__rate">
+												<div><img src="answers_files/footer-emblem.png"></div>
+												<div>Независимая оценка качества оказания услуг медицинским организациям<a href="#">Участвовать в голосовании</a></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="footer__warning">
+									<div>Имеются противопоказания. Необходимо проконсультироваться со специалистом</div><br><br><br><br>
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+			</div>
+			<div class="popup-win">
+				<div class="popup-win__overlay"></div>
+				<div class="popup-win__wrap">
+					<div class="popup-win__box">
+						<div class="popup-win__close-field js-popup-close"></div>
+									<div class="popup-form popup-form-appointment">
+										<div class="popup-form__wrap">
+											<form class="form popup-form__form js-feedback-submit" method="POST" action="">
+												<div class="popup-form__header">
+													<div class="popup-form__logo"><img src="answers_files/logo.svg" loading="lazy"></div>
+													<div class="popup-form__title">Записаться на прием</div>
+													<div class="popup-form__close js-popup-close">
+														<div></div>
+													</div>
+												</div>
+												<div class="popup-form__body">
+													<div class="popup-form__box">
+														<div class="popup-form__row">
+															<input class="popup-form__input _name" name="name" placeholder="Ваше имя">
+														</div>
+														<div class="popup-form__row">
+															<input class="popup-form__input _phone" name="phone" placeholder="Ваш номер телефона *">
+														</div>
+													</div>
+												</div>
+												<div class="popup-form__footer">
+													<div class="popup-form__submit">
+														<button class="popup-form__button" type="submit">Жду звонка</button>
+														<input type="hidden" name="submit" value="appointment-submit">
+													</div>
+													<div class="popup-form__private">Нажимая на кнопку, вы даете согласие на <a href="#">обработку своих персональных данных</a></div>
+												</div>
+												<div class="popup-form__bot">Мы поможем быстро найти то, что Вам нужно!</div>
+											</form>
+										</div>
+									</div>
+									<div class="popup-form popup-form-callback">
+										<div class="popup-form__wrap">
+											<form class="form popup-form__form js-feedback-submit" method="POST" action="">
+												<div class="popup-form__header">
+													<div class="popup-form__logo"><img src="answers_files/logo.svg" loading="lazy"></div>
+													<div class="popup-form__title">Хотите, мы вам перезвоним</div>
+													<div class="popup-form__close js-popup-close">
+														<div></div>
+													</div>
+												</div>
+												<div class="popup-form__body">
+													<div class="popup-form__box">
+														<div class="popup-form__row">
+															<input class="popup-form__input _name" name="name" placeholder="Ваше имя">
+														</div>
+														<div class="popup-form__row">
+															<input class="popup-form__input _phone" name="phone" placeholder="Ваш номер телефона *">
+														</div>
+													</div>
+												</div>
+												<div class="popup-form__footer">
+													<div class="popup-form__submit">
+														<button class="popup-form__button" type="submit">Жду звонка</button>
+														<input type="hidden" name="submit" value="callback-submit">
+													</div>
+													<div class="popup-form__private">Нажимая на кнопку, вы даете согласие на <a href="#">обработку своих персональных данных</a></div>
+												</div>
+												<div class="popup-form__bot">Мы поможем быстро найти то, что Вам нужно!</div>
+											</form>
+										</div>
+									</div>
+									<div class="popup-form popup-form-callback-2">
+										<div class="popup-form__wrap">
+											<form class="form popup-form__form js-feedback-submit" method="POST" action="">
+												<div class="popup-form__header">
+													<div class="popup-form__logo"><img src="answers_files/logo.svg" loading="lazy"></div>
+													<div class="popup-form__title">Обратный звонок</div>
+													<div class="popup-form__close js-popup-close">
+														<div></div>
+													</div>
+												</div>
+												<div class="popup-form__body">
+													<div class="popup-form__box">
+														<div class="popup-form__row">
+															<input class="popup-form__input _name" name="name" placeholder="Ваше имя">
+														</div>
+														<div class="popup-form__row">
+															<input class="popup-form__input _phone" name="phone" placeholder="Ваш номер телефона *">
+														</div>
+													</div>
+												</div>
+												<div class="popup-form__footer">
+													<div class="popup-form__submit">
+														<button class="popup-form__button" type="submit">Отправить заявку</button>
+														<input type="hidden" name="submit" value="callback-2-submit">
+													</div>
+													<div class="popup-form__private">Нажимая на кнопку, вы даете согласие на <a href="#">обработку своих персональных данных</a>.</div>
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="popup-form popup-form-goback">
+										<div class="popup-form__wrap">
+											<form class="form popup-form__form js-feedback-submit" method="POST" action="">
+												<div class="popup-form__header">
+													<div class="popup-form__logo"><img src="answers_files/logo.svg" loading="lazy"></div>
+													<div class="popup-form__title-2">Вы действительно хотите прервать запись?</div>
+													<div class="popup-form__close js-popup-close">
+														<div></div>
+													</div>
+												</div>
+												<div class="popup-form__body">
+													<div class="popup-form__content">
+														<div class="popup-form__caption">Если у вас возникли вопросы, позвоните нам по телефону:</div>
+														<div class="popup-form__phone"><a href="tel:+74954325644">+7 (495) 432-56-44</a></div>
+													</div>
+												</div>
+												<div class="popup-form__footer">
+													<div class="popup-form__buttons">
+														<div class="popup-form__cancel js-popup-close">Прервать</div>
+														<div class="popup-form__continue">Продолжить</div>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="popup-form popup-form-action">
+										<div class="popup-form__wrap">
+											<form class="form popup-form__form js-feedback-submit" method="POST" action="">
+												<div class="popup-form__header">
+													<div class="popup-form__title">Акции в августе</div>
+													<div class="popup-form__subtitle">Срок акции с 01.08.2021 до 31.08.2021</div>
+													<div class="popup-form__close js-popup-close">
+														<div></div>
+													</div>
+												</div>
+												<div class="popup-form__body">
+													<div class="popup-form__banner">
+														<div class="popup-form__banner-text">Бесплатная консультация репродуктолога</div>
+														<div class="popup-form__banner-picture">
+															<picture> <img src="answers_files/popup-form__banner-picture-1.png"></picture>
+														</div>
+													</div>
+													<div class="popup-form__box">
+														<div class="popup-form__row">
+															<input class="popup-form__input _name" name="name" placeholder="Ваше имя">
+														</div>
+														<div class="popup-form__row">
+															<input class="popup-form__input _phone" name="phone" placeholder="Ваш номер телефона *">
+														</div>
+													</div>
+												</div>
+												<div class="popup-form__footer">
+													<div class="popup-form__submit">
+														<button class="popup-form__button" type="submit">Жду звонка</button>
+														<input type="hidden" name="submit" value="callback-submit">
+													</div>
+													<div class="popup-form__private">Нажимая на кнопку, вы даете согласие на <a href="#">обработку своих персональных данных</a></div>
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="popup-form popup-form-feedback">
+										<div class="popup-form__wrap">
+											<form class="form popup-form__form js-feedback-submit" method="POST" action="">
+												<div class="popup-form__header">
+													<div class="popup-form__logo"><img src="answers_files/logo.svg" loading="lazy"></div>
+													<div class="popup-form__title">ХОТИТЕ, МЫ ВАМ ПЕРЕЗВОНИМ?</div>
+													<div class="popup-form__close js-popup-close">
+														<div></div>
+													</div>
+												</div>
+												<div class="popup-form__body">
+													<div class="popup-form__box">
+														<div class="popup-form__row">
+															<div class="form__cols">
+																<div class="form__col">
+																	<div class="form__input">
+																		<div class="form__icon">
+																			<div class="i-form-name"></div>
+																		</div>
+																		<input class="popup-form__input _name" name="name" placeholder="Ваше имя">
+																		<div class="form__error i-err"></div>
+																	</div>
+																</div>
+																<div class="form__col">
+																	<div class="form__input">
+																		<div class="form__icon">
+																			<div class="i-form-phone"></div>
+																		</div>
+																		<input class="popup-form__input _phone" name="phone" placeholder="Ваш номер телефона *">
+																		<div class="form__error i-err"></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="popup-form__row">
+															<div class="form__row">
+																<div class="form__textarea">
+																	<div class="form__textarea-title">Ваше сообщение:</div>
+																	<textarea class="popup-form__input" name="msg" value="" placeholder=""></textarea>
+																</div>
+															</div>
+														</div>
+														<div class="popup-form__row">
+															<div class="popup-form__private">Нажимая на кнопку, вы даете согласие на <a href="#">обработку своих персональных данных</a></div>
+														</div>
+													</div>
+												</div>
+												<div class="popup-form__footer">
+													<div class="popup-form__submit">
+														<button class="popup-form__button" type="submit">
+															<div class="btn btn_red">
+																<div class="icon-border">
+																	<div class="i-form-submit"></div>
+																</div><span>Отправить заявку</span>
+															</div>
+														</button>
+														<input type="hidden" name="submit" value="callback-submit">
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="popup-form popup-form-reviews">
+										<div class="popup-form__wrap">
+											<form class="form popup-form__form js-feedback-submit" method="POST" action="">
+												<div class="popup-form__header">
+													<div class="popup-form__icon">
+														<div class="i-feed-blue"></div>
+													</div>
+													<div class="popup-form__title">Оставить отзыв</div>
+													<div class="popup-form__close js-popup-close">
+														<div></div>
+													</div>
+												</div>
+												<div class="popup-form__body">
+													<div class="popup-form__text">Общество с ограниченной ответственностью Клиника «Центр ЭКО» оказывает помощь в лечении всех форм мужского и женского бесплодия,</div>
+													<div class="popup-form__box">
+														<div class="popup-form__row">
+															<div class="form__cols">
+																<div class="form__col">
+																	<div class="form__input">
+																		<div class="form__icon">
+																			<div class="i-form-name"></div>
+																		</div>
+																		<input class="popup-form__input _name" name="name" placeholder="Ваше имя">
+																		<div class="form__error i-err"></div>
+																	</div>
+																</div>
+																<div class="form__col">
+																	<div class="form__input">
+																		<div class="form__icon">
+																			<div class="i-form-email"></div>
+																		</div>
+																		<input class="popup-form__input _email" name="email" placeholder="Ваша почта">
+																		<div class="form__error i-err"></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="popup-form__row">
+															<div class="form__row">
+																<div class="form__textarea">
+																	<div class="form__textarea-title">Ваш отзыв:</div>
+																	<textarea class="popup-form__input" name="msg" value="" placeholder=""></textarea>
+																</div>
+															</div>
+														</div>
+														<div class="popup-form__row">
+															<div class="popup-form__private">
+																<div class="form__checkbox form__checkbox_dark">
+																	<input class="form__checkbox-input _cb-req" type="checkbox" name="private" id="private-popup-3" checked="checked">
+																	<label class="form__checkbox-label fs-12" for="private-popup-3">Я принимаю <a href="http://localhost:3000/answers/terms.html">Соглашение о конфиденциальности личной информации</a> , даю согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности.</label>
+																	<div class="form__error i-err">Ошибка</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="popup-form__footer">
+													<div class="popup-form__submit">
+														<button class="popup-form__button" type="submit">
+															<div class="btn btn_red">
+																<div class="icon-border">
+																	<div class="i-form-submit"></div>
+																</div><span>Отправить отзыв</span>
+															</div>
+														</button>
+														<input type="hidden" name="submit" value="review-submit">
+													</div>
+												</div>
+												<div class="form__loading">
+													<div class="form__loading-bg">Отправка<br>данных...</div>
+												</div>
+											</form>
+										</div>
+									</div>
+						<!--+question-form()-->
+						<!--+feedback-doctor-form()-->
+						<!--+success-form()-->
+									<div class="popup-form popup-form-search">
+										<div class="popup-form__wrap">
+											<div class="popup-form__form">
+												<div class="mobile-search">
+													<div class="mobile-search__wrap">
+														<div class="mobile-search__goback js-popup-close"></div>
+														<div class="mobile-search__box">
+															<div>
+																<input class="mobile-search__input" id="mobile-search" type="text" name="s" placeholder="Поиск по сайту">
+															</div>
+															<div class="mobile-search__reset"></div>
+														</div>
+														<div class="mobile-search__result"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="popup-form popup-form-menu">
+										<div class="popup-info">
+											<div class="popup-form__close js-popup-close">
+												<div></div>
+											</div>
+											<div class="popup-info__body">
+												<div class="popup-info__menu"><a class="js-goto js-popup-close" href="#eko">Об Эко</a><a class="js-goto js-popup-close" href="#about">О клинике</a><a class="js-goto js-popup-close" href="#programs">Программы</a><a class="js-goto js-popup-close" href="#price">Цены</a><a class="js-goto js-popup-close" href="#reviews">Отзывы</a></div>
+											</div>
+										</div>
+									</div>
+									<div class="popup-form popup-form-worktime">
+										<div class="popup-form__wrap">
+											<div class="popup-form__form popup-form__form_bg-white">
+												<div class="popup-info__header"><img class="popup-info__icon" src="answers_files/clock.svg"><img class="popup-info__logo" src="answers_files/logo_002.svg">
+													<div class="popup-form__close js-popup-close">
+														<div></div>
+													</div>
+												</div>
+												<div class="popup-info__body">
+													<div class="popup-info__title">Время работы:</div>
+													<div class="popup-info__text">
+														Пн-пт: <span>9:00 - 21:00</span><br>
+														Сб: <span>9:00 - 20:00</span><br>
+														Вс: <span>9:00 - 19:00</span>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="popup-form popup-form-modal">
+										<div class="popup-form__wrap">
+											<div class="popup-form__form popup-form__form_bg-white">
+												<div class="popup-info__header"><img class="popup-info__icon" src="answers_files/info.svg">
+													<div class="popup-form__close js-popup-close">
+														<div></div>
+													</div>
+												</div>
+												<div class="popup-info__body"></div>
+											</div>
+										</div>
+									</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+</body></html>

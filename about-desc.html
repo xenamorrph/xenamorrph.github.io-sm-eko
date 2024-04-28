@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		<meta name="format-detection" content="telephone=no">
+		<script src="about-desc_files/jquery.min_002.js" type="text/javascript"></script>
+		<script src="about-desc_files/popup.js"></script>
+		<script src="about-desc_files/_dev.js"></script>
+		<title>
+		</title>
+		<title>Поиск</title>
+		<link rel="stylesheet" href="about-desc_files/template.css">
+		<link rel="stylesheet" href="about-desc_files/style.css">
+		<link rel="stylesheet" href="about-desc_files/swiper-bundle.min.css">
+		<script src="about-desc_files/jquery.min.js" type="text/javascript"></script>
+		<script src="about-desc_files/swiper-bundle.min.js" type="text/javascript"></script>
+		<script src="about-desc_files/slick.min.js" type="text/javascript"></script>
+		<script src="about-desc_files/jquery.maskedinput.min.js" type="text/javascript"></script>
+		<script src="about-desc_files/script.js" type="text/javascript"></script>
+		<script src="about-desc_files/jquery.autocomplete.min.js" type="text/javascript"></script>
+		<script src="about-desc_files/script_002.js" type="text/javascript"></script>
+		<script src="about-desc_files/b-gallery.js" type="text/javascript"></script>
+		<script src="about-desc_files/swiper-bundle.min.js" type="text/javascript"></script>
+	</head>
+	<body><script id="__bs_script__">//<![CDATA[
+  (function() {
+    try {
+      var script = document.createElement('script');
+      if ('async') {
+        script.async = true;
+      }
+      script.src = '/browser-sync/browser-sync-client.js?v=2.29.3'.replace("HOST", location.hostname);
+      if (document.body) {
+        document.body.appendChild(script);
+      } else if (document.head) {
+        document.head.appendChild(script);
+      }
+    } catch (e) {
+      console.error("Browsersync: could not append script tag", e);
+    }
+  })()
+//]]></script><script async="" src="about-desc_files/browser-sync-client.js"></script>
+
+		<div class="wrapper index-page">
+			<div class="wrapper__box">
+				<header class="header js-header-stick">
+					<div class="header__top">
+						<div class="header__top-wrap"><a class="header__logo" href="http://localhost:3000/about-desc/index.html">
+								<picture> <img src="about-desc_files/logo.svg" loading="lazy" alt="Логотип"></picture></a>
+							<div class="header__call">
+								<div class="header__caption">Круглосуточная запись по телефону:</div><a class="header__phone" href="tel:+74951531851">+7 495 153-18-51</a>
+							</div>
+							<div class="header__buttons header__two-button"><a class="header__button js-open-popup" data-target=".popup-form-callback" href="#">Заказать звонок</a><a class="header__button header__button_sign" href="#">Записаться онлайн</a></div><a class="header__button_lk" href="#"><span>Личный кабинет</span></a>
+						</div>
+					</div>
+					<div class="header__bottom">
+						<div class="header__bottom-wrap">
+							<div class="header__search">
+								<div class="header__search-row">
+									<form method="GET" action="">
+										<input id="header-search" name="q" type="text" placeholder="Поиск по сайту">
+										<button type="submit"></button>
+										<div class="header__search-toggle"></div>
+										<div class="header__search-loading"></div>
+										<div class="header__search-result"></div>
+									</form>
+								</div>
+							</div>
+							<nav class="header__menu">
+								<ul class="header__menu-box">
+									<li><a class="header__link" href="#">О центре</a></li>
+									<li><a class="header__link" href="http://localhost:3000/about-desc/services.html">Услуги и цены</a>
+										<div class="header__submenu">
+											<ul>
+												<li><a href="#"><img src="about-desc_files/h-menu__link-icon-1.svg"><span>Диагностика причин бесплодия</span></a></li>
+												<li><a href="#"><img src="about-desc_files/h-menu__link-icon-2.svg"><span>Лечение бесплодия</span></a></li>
+												<li><a href="#"><img src="about-desc_files/h-menu__link-icon-3.svg"><span>Внутриматочная инсеминация (ВМИ)</span></a></li>
+												<li><a href="#"><img src="about-desc_files/h-menu__link-icon-4.svg"><span>ЭКО (экстракорпоральное оплодотворение)</span></a></li>
+												<li><a href="#"><img src="about-desc_files/h-menu__link-icon-5.svg"><span>Генетические исследования</span></a></li>
+												<li><a href="#"><img src="about-desc_files/h-menu__link-icon-6.svg"><span>Программы с донорской яйцеклеткой (ооцитами)</span></a></li>
+												<li><a href="#"><img src="about-desc_files/h-menu__link-icon-7.svg"><span>Эмбриология</span></a></li>
+												<li><a href="#"><img src="about-desc_files/h-menu__link-icon-8.svg"><span>Криоконсервация</span></a></li>
+												<li><a href="#"><img src="about-desc_files/h-menu__link-icon-9.svg"><span>Хирургическое лечение бесплодия</span></a></li>
+												<li><a href="#"><img src="about-desc_files/h-menu__link-icon-10.svg"><span>Ведение беременности</span></a></li>
+											</ul>
+										</div>
+									</li>
+									<li><a class="header__link" href="http://localhost:3000/about-desc/doctor.html">Врачи</a></li>
+									<li><a class="header__link" href="http://localhost:3000/about-desc/actions.html">Акции</a></li>
+									<li><a class="header__link" href="http://localhost:3000/about-desc/patients.html">Пациентам</a>
+										<div class="header__submenu">
+											<ul>
+												<li><a href="#">Цены</a></li>
+												<li><a href="http://localhost:3000/about-desc/juridical.html">Налоговые вычеты</a></li>
+												<li><a href="#">Кредит</a></li>
+												<li><a href="http://localhost:3000/about-desc/articles.html">Статья</a></li>
+												<li><a href="http://localhost:3000/about-desc/answers.html">Ответы на вопросы</a></li>
+												<li><a href="http://localhost:3000/about-desc/diseases.html">Заболевания</a></li>
+											</ul>
+										</div>
+									</li>
+									<li><a class="header__link" href="http://localhost:3000/about-desc/feedback.html">Отзывы</a></li>
+									<li><a class="header__link" href="http://localhost:3000/about-desc/contacts.html">Контакты</a></li>
+									<li class="header__menu-add"><a class="header__social-link" href="#"> <img src="about-desc_files/ico-vk.svg"></a><a class="header__social-link" href="#"> <img src="about-desc_files/ico-ok.svg"></a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="header__buttons header__mob-button header__two-button"><a class="header__button" href="#">Личный кабинет</a><a class="header__button header__button_sign" href="#">Записаться онлайн</a></div>
+				</header>
+				<section class="b-banner">
+					<div class="container"><a class="b-banner__image" href="#">
+							<picture>
+								<source srcset="about-desc_files/b-banner-mobile.png 1x" media="(max-width: 768px)" loading="lazy"><img src="about-desc_files/b-banner.jpg" loading="lazy">
+							</picture></a></div>
+				</section>
+				<main class="main-content">
+					<div class="breadcrumbs">
+						<div class="container">
+							<div class="breadcrumbs__wrap">
+								<ul class="breadcrumbs__list">
+									<li class="breadcrumbs__home"><a class="breadcrumbs__link breadcrumbs__link_home" href="#" title="">Главная</a></li>
+									<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#" title="">Название раздела</a></li>
+									<li class="breadcrumbs__item"><span class="breadcrumbs__current">Название активной страницы</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+<section class="b-return">
+	<div class="container"><a class="b-return__link" href="#">Бесплатная консультация репродуктолога</a></div>
+</section>
+<section class="b-intro-download">
+	<div class="container">
+		<div class="b-intro-download__container">
+			<div class="b-intro-download__desc">
+				<div class="b-intro-download__text text">
+					<p><b>Пациент является плательщиком.</b><br> Пакет документов для 
+получения справки об оплате медицинских услуг для предоставления в 
+налоговые органы, если плательщиком является сам пациент: </p>
+					<ul> 
+						<li>копия паспорта; </li>
+						<li>копия ИНН (в случае отсутствия копии документа, номер ИНН необходимо указать в заявлении); </li>
+						<li>копии чеков (требуется только в случае частичного возмещения, 
+если необходимо получить справку на сумму, имеющихся чеков, во всех 
+остальных случаях справка готовится на общую сумму обслуживания за год);
+ </li>
+						<li>заявление (заполняется по образцу).</li>
+					</ul>
+				</div>
+				<div class="b-intro-download__buttons"><a class="b-intro-download__button b-intro-download__button_sign" href="#">Написать заявление</a><a class="b-intro-download__button b-intro-download__button_download" href="#" download="download">Скачать в PDF</a></div>
+			</div>
+			<div class="b-intro-download__picture">
+				<picture><img src="about-desc_files/b-intro-download-1.jpg" loading="lazy"></picture>
+			</div>
+		</div>
+	</div>
+</section>
+					<section class="b-text">
+						<div class="container">
+							<div class="b-text__text text">
+								<p>Вышеуказанные документы можно предоставить в любую 
+регистратуру холдинга «СМ-Клиника» или направить по электронной почте 
+spravka289@smpost.ruв текстовом сообщении укажите, пожалуйста, за какой 
+период обслуживания необходимо предоставить справку, ФИО пациента, номер
+ амбулаторной карты, контактный телефон, адрес клиники, в которой хотели
+ бы получить готовую справку. Так же прикрепите, пожалуйста, копии 
+следующих документов: паспорт (1-я страница) и ИНН. В случае, если Вы не
+ можете прикрепить копии документов, просим дополнительно указать номер 
+ИНН, паспортные данные и дату рождения пациента в заявлении).<br>Срок изготовления справки 4 недели.<br>Информация о готовности справки Вам поступит в виде смс сообщения на номер телефона, указанный в амбулаторной карте пациента.<br>При
+ получении справки лицензии не выдаются. Вы можете самостоятельно их 
+распечатать с сайта или запросить лицензии в регистратуре клиники.<br>Телефон для информации <a href="#"><b>+7 (495) 292-67-49</b></a></p>
+								<p><b>Пакет документов для получения налогового вычета, если плательщиком не является пациет:</b><br>Пакет
+ документов для справки об оплате медицинских услуг для предоставления в
+ налоговые органы, если пациент не является плательщиком:<br>Заявителю (плательщику) необходимо предоставить следующие документы:</p>
+								<ul> 
+									<li>копии паспортов (плательщика и пациента)</li>
+									<li>копии паспортов (плательщика и пациента);</li>
+									<li>копия ИНН плательщика ( в случае отсутствия копии документа, номер ИНН необходимо указать в заявлении);</li>
+									<li>копии чеков (требуется только в случае частичного 
+возмещения, если необходимо получить справку на сумму, имеющихся чеков, 
+во всех остальных случаях справка готовится на общую сумму обслуживания 
+за год);</li>
+									<li>заявление ( заполняется в регистратуре по образцу);</li>
+									<li>свидетельство о рождении ребенка (если пациент - ребенок;)</li>
+									<li>свидетельство о браке (если пациент - супруг или супруга);</li>
+									<li>свидетельство о рождении плательщика (если пациент-родитель).</li>
+								</ul><a href="" download="">Заявление на налоговый вычет для представителей пациентов<br>Скачать в pdf</a><br><br>
+								<p>Вышеуказанные документы можно предоставить в любую 
+регистратуру холдинга «СМ-Клиника» или направить по электронной почте 
+spravka289@smpost.ru (в текстовом сообщении укажите, пожалуйста, за 
+какой период обслуживания необходимо предоставить справку, ФИО 
+плательщика, ФИО пациента, степень родства, номер амбулаторной карты 
+пациента, контактный телефон, адрес клиники, в которой хотели бы 
+получить готовую справку. Так же прикрепите, пожалуйста, копии 
+документов, указанных в пп.1-7. В случае, если Вы не можете прикрепить 
+копии документов, просим дополнительно указать номер ИНН, паспортные 
+данные и дату рождения пациента в заявлении).<br>Срок изготовления 
+справки - 4 недели. Информация о готовности справки Вам поступит в виде 
+смс сообщения на номер телефона, указанный в амбулаторной карте 
+пациента. </p>
+								<p>Телефон для информации: <b><a href="#">+7 (495) 292-67-49</a></b><br>Обращаем
+ Ваше внимание, что налоговый вычет за детей можно оформить только до 
+достижения ребенком 18 лет. (Налоговый Кодекс РФ ст.219)</p>
+								<p><b>Список нормативных документов по предоставлению налогового вычета:</b></p>
+								<p>При выдаче справки за периоды до 2021 года (включительно 2020 год) основным документом является:</p>
+								<ul> 
+									<li>Постановление Правительства РФ от 19.03.2001 № 201 (ред. от
+ 26.06.2007) "Об утверждении Перечней медицинских услуг и дорогостоящих 
+видов лечения в медицинских учреждениях Российской Федерации, 
+лекарственных средств, суммы оплаты которых за счет собственных средств 
+налогоплательщика учитываются при определении суммы социального 
+налогового вычета";</li>
+									<li>Приказ Министерства здравоохранения РФ № 289 и Министерства
+ РФ по налогам и сборам № БГ-3-04/256 от 25 июля 2001 года "О реализации
+ Постановления Правительства Российской Федерации от 19 марта 2001 г. 
+№201 " Об утверждении Перечней медицинских услуг и дорогостоящих видов 
+лечения в медицинских учреждениях Российской Федерации, лекарственных 
+средств, суммы оплаты которых за счет собственных средств 
+налогоплательщика учитываются при определении суммы социального 
+налогового вычета".</li>
+								</ul>
+								<p><b>При выдаче справки с 2021 года основным документом является:</b></p>
+								<ul> 
+									<li>Постановление Правительства РФ от 8 апреля 2020 г. №458 " 
+"Об утверждении Перечней медицинских услуг и дорогостоящих видов лечения
+ в медицинских организациях, у индивидуальных предпринимателей, 
+осуществляющих медицинскую деятельность, суммы оплаты которых за счет 
+собственных средств налогоплательщика учитываются при определении суммы 
+социального налогового вычета".</li>
+								</ul>
+								<p><b>Дополнительно используется информация, содержащаяся в ответах на вопросы в письмах Министерства финансов РФ:</b></p>
+								<ul>
+									<li>письмо Министерства финансов РФ от 19 июля 2019 г. N 03-04-09/53921;</li>
+									<li>письмо Министерства финансов РФ от 5 июня 2019 г. N 03-04-05/41125;</li>
+									<li>письмо Министерства финансов РФ от 3 июня 2019 г. N 03-04-05/40318;</li>
+									<li>письмо Министерства финансов РФ от 19 апреля 2019 г. N 03-04-05/28338;</li>
+									<li>письма Министерства финансов РФ от 3 апреля 2019 г. N 03-04-05/23286, от 28 марта 2019 г. N 03-04-05/21107;</li>
+									<li>письма Министерства финансов РФ от 15 апреля 2019 г. N 03-04-05/26545.</li>
+								</ul>
+								<h2>Что такое налоговый вычет?</h2>
+								<p>Обращаем ваше внимание, что в соответствии с подпунктом 3 
+пункта 1 статьи 219 Налогового кодекса Российской Федерации 
+налогоплательщик имеет право на получение социального налогового вычета в
+ сумме, уплаченной налогоплательщиком в налоговом периоде за медицинские
+ услуги, оказанные медицинскими организациями, индивидуальными 
+предпринимателями, осуществляющими медицинскую деятельность, ему, его 
+супругу (супруге), родителям, детям (в том числе усыновленным) в 
+возрасте до 18 лет, подопечным в возрасте до 18 лет (в соответствии с 
+перечнем медицинских услуг, утвержденным Правительством Российской 
+Федерации), а также в размере стоимости лекарственных препаратов для 
+медицинского применения (в соответствии с перечнем лекарственных 
+средств, утвержденным Правительством Российской Федерации), назначенных 
+им лечащим врачом и приобретаемых налогоплательщиком за счет собственных
+ средств. Подготовки копий медицинских документов — до 7 (семи) рабочих 
+дней.</p>
+							</div>
+						</div>
+					</section>
+<section class="b-licenses">
+	<div class="container">
+		<div class="b-licenses__header">
+			<h2 class="page-title-2"></h2>
+		</div>
+		<div class="b-licenses__container">
+			<div class="b-licenses__desc">
+				<div class="b-licenses__left">
+					<picture><img src="about-desc_files/b-licenses-1.png" loading="lazy"></picture>
+				</div>
+				<div class="b-licenses__right">Мы осуществляем деятельность на основании медицинских лицензий<br> в соответствии с рекомендациями Минздрава
+					<div class="b-licenses__buttons"><a class="b-licenses__button" href="#">Посмотреть лицензии</a><a class="b-licenses__button" href="#">Правовая информация</a></div>
+				</div>
+			</div>
+			<div class="b-licenses__image">
+				<picture><img src="about-desc_files/b-licenses-2.png" loading="lazy"></picture>
+			</div>
+		</div>
+	</div>
+</section>
+				</main>
+				<div class="footer">
+					<footer>
+						<div class="footer__top">
+							<div class="container">
+								<div class="footer__cols">
+									<div class="footer__col">
+										<div class="footer__title">Репродуктивный центр</div>
+										<div class="footer__menu">
+											<ul>
+												<li><a href="http://localhost:3000/about-desc/about.html">О центре</a></li>
+												<li><a href="http://localhost:3000/about-desc/services.html">Услуги</a></li>
+												<li><a href="http://localhost:3000/about-desc/services.html">Врачи</a></li>
+												<li><a href="http://localhost:3000/about-desc/openday.html">Акции</a></li>
+												<li><a href="#">Анализы</a></li>
+												<li><a href="#">Пациентам</a></li>
+												<li><a href="#">Отзывы</a></li>
+												<li><a href="#">Контакты</a></li>
+												<li><a href="#">Карта сайта</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="footer__col">
+										<div class="footer__title">Популярное</div>
+										<div class="footer__menu">
+											<ul>
+												<li><a href="#">Акции</a></li>
+												<li><a href="#">ЭКО</a></li>
+												<li><a href="#">Дианостика бесплодия</a></li>
+												<li><a href="#">Лечение бесплодия</a></li>
+												<li><a href="#">Планирование беременности</a></li>
+												<li><a href="#">УЗИ</a></li>
+												<li><a href="#">Статьи</a></li>
+												<li><a href="#">Заболевания</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="footer__col">
+										<div class="footer__title">Наши клиники</div>
+										<div class="footer__menu">
+											<ul>
+												<li><a href="#">Детские клиники</a></li>
+												<li><a href="#">Центр хирургии</a></li>
+												<li><a href="#">Пластическая хирургия</a></li>
+												<li><a href="#">Стоматология</a></li>
+												<li><a href="#">Центр ЭКО</a></li>
+												<li><a href="#">Онкологический центр</a></li>
+												<li><a href="#">Косметология</a></li>
+												<li><a href="#">Скорая помощь</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="footer__col">
+										<div class="footer__title">Информация</div>
+										<div class="footer__menu">
+											<ul>
+												<li><a href="#">Пациентам</a></li>
+												<li><a href="#">Правовая информация</a></li>
+												<li><a href="#">Лицензия клиник</a></li>
+												<li><a href="#">Политика обработки персональных данных</a></li>
+												<li><a href="#">Вакансии</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="footer__col">
+										<div class="footer__title footer__title_contacts">Контакты</div>
+										<div class="footer__24">Круглосуточная запись по телефону:</div>
+										<div class="footer__phone">
+											 <div class="fc_phone vcard"><a href="#" id="ct_phone_2" class="nb-tlf tel">+7 495 153 18 51</a></div></div><span>Москва, пер.Расковой, д.14/22 (м.Динамо, м.Белорусская)</span>
+										<div class="footer__buttons"><a class="footer__button footer__button_call" href="#">Заказать звонок</a><a class="footer__button footer__button_sign" href="#">Записаться онлайн</a></div>
+										<div class="footer__social">
+											<div class="footer__social_item"><a class="footer__social_link footer__social_link_vk" href="https://vk.com/smclinica" target="_blank" rel="nofollow"></a></div>
+											<div class="footer__social_item"><a class="footer__social_link footer__social_link_tel" href="https://t.me/sm_clinic" target="_blank" rel="nofollow"></a></div>
+											<div class="footer__social_item"><a class="footer__social_link footer__social_link_ok" href="https://ok.ru/smclinica" target="_blank" rel="nofollow"></a></div>
+										</div>
+										<div class="footer__appstore"><a href="#" target="_blank"><img src="about-desc_files/footer-appstore.png"></a><a href="#" target="_blank"><img src="about-desc_files/footer-googleplay.png"></a><a href="#" target="_blank"><img src="about-desc_files/footer-appgallery.png"></a></div>
+										<div class="footer__payments">Мы принимаем к оплате
+											<div class="footer__cards"><img src="about-desc_files/footer-mir.svg" loading="lazy"><img src="about-desc_files/footer-visa.svg" loading="lazy"><img src="about-desc_files/footer-mastercard.svg" loading="lazy"><img src="about-desc_files/footer-master.svg" loading="lazy"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="footer__bot">
+							<div class="container">
+								<div class="footer__box"><a class="footer__logo"><img src="about-desc_files/footer-logo.svg"></a>
+									<div class="footer__footnote">
+										<div class="footer__text text">
+											<p>© 2002-2023 ООО «СМ-Клиника»</p>
+											<p>Материалы, размещенные на данной странице, носят 
+информационный характер и предназначены для образовательных целей. 
+Посетители сайта не должны использовать их в качестве медицинских 
+рекомендаций. Определение диагноза и выбор методики лечения остается 
+исключительной прерогативой вашего лечащего врача! ООО «СМ-Клиника» не 
+несёт ответственности за возможные негативные последствия, возникшие в 
+результате использования информации, размещенной на сайте sm-eko.ru</p>
+											<p>ООО «ДЕТЗДРАВ» Лицензия № Л041-01137-77/00555050 от 16.12.2019 г.</p>
+											<p>© 2023 «СМ-Клиника» — репродуктивный центр <br>Политика СМ-Клиника в отношении обработки персональных данных</p>
+										</div>
+										<div class="footer__text">
+											<div class="footer__rate">
+												<div><img src="about-desc_files/footer-emblem.png"></div>
+												<div>Независимая оценка качества оказания услуг медицинским организациям<a href="#">Участвовать в голосовании</a></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="footer__warning">
+									<div>Имеются противопоказания. Необходимо проконсультироваться со специалистом</div><br><br><br><br>
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+			</div>
+			<div class="popup-win">
+				<div class="popup-win__overlay"></div>
+				<div class="popup-win__wrap">
+					<div class="popup-win__box">
+						<div class="popup-win__close-field js-popup-close"></div>
+									<div class="popup-form popup-form-appointment">
+										<div class="popup-form__wrap">
+											<form class="form popup-form__form js-feedback-submit" method="POST" action="">
+												<div class="popup-form__header">
+													<div class="popup-form__logo"><img src="about-desc_files/logo.svg" loading="lazy"></div>
+													<div class="popup-form__title">Записаться на прием</div>
+													<div class="popup-form__close js-popup-close">
+														<div></div>
+													</div>
+												</div>
+												<div class="popup-form__body">
+													<div class="popup-form__box">
+														<div class="popup-form__row">
+															<input class="popup-form__input _name" name="name" placeholder="Ваше имя">
+														</div>
+														<div class="popup-form__row">
+															<input class="popup-form__input _phone" name="phone" placeholder="Ваш номер телефона *">
+														</div>
+													</div>
+												</div>
+												<div class="popup-form__footer">
+													<div class="popup-form__submit">
+														<button class="popup-form__button" type="submit">Жду звонка</button>
+														<input type="hidden" name="submit" value="appointment-submit">
+													</div>
+													<div class="popup-form__private">Нажимая на кнопку, вы даете согласие на <a href="#">обработку своих персональных данных</a></div>
+												</div>
+												<div class="popup-form__bot">Мы поможем быстро найти то, что Вам нужно!</div>
+											</form>
+										</div>
+									</div>
+									<div class="popup-form popup-form-callback">
+										<div class="popup-form__wrap">
+											<form class="form popup-form__form js-feedback-submit" method="POST" action="">
+												<div class="popup-form__header">
+													<div class="popup-form__logo"><img src="about-desc_files/logo.svg" loading="lazy"></div>
+													<div class="popup-form__title">Хотите, мы вам перезвоним</div>
+													<div class="popup-form__close js-popup-close">
+														<div></div>
+													</div>
+												</div>
+												<div class="popup-form__body">
+													<div class="popup-form__box">
+														<div class="popup-form__row">
+															<input class="popup-form__input _name" name="name" placeholder="Ваше имя">
+														</div>
+														<div class="popup-form__row">
+															<input class="popup-form__input _phone" name="phone" placeholder="Ваш номер телефона *">
+														</div>
+													</div>
+												</div>
+												<div class="popup-form__footer">
+													<div class="popup-form__submit">
+														<button class="popup-form__button" type="submit">Жду звонка</button>
+														<input type="hidden" name="submit" value="callback-submit">
+													</div>
+													<div class="popup-form__private">Нажимая на кнопку, вы даете согласие на <a href="#">обработку своих персональных данных</a></div>
+												</div>
+												<div class="popup-form__bot">Мы поможем быстро найти то, что Вам нужно!</div>
+											</form>
+										</div>
+									</div>
+									<div class="popup-form popup-form-callback-2">
+										<div class="popup-form__wrap">
+											<form class="form popup-form__form js-feedback-submit" method="POST" action="">
+												<div class="popup-form__header">
+													<div class="popup-form__logo"><img src="about-desc_files/logo.svg" loading="lazy"></div>
+													<div class="popup-form__title">Обратный звонок</div>
+													<div class="popup-form__close js-popup-close">
+														<div></div>
+													</div>
+												</div>
+												<div class="popup-form__body">
+													<div class="popup-form__box">
+														<div class="popup-form__row">
+															<input class="popup-form__input _name" name="name" placeholder="Ваше имя">
+														</div>
+														<div class="popup-form__row">
+															<input class="popup-form__input _phone" name="phone" placeholder="Ваш номер телефона *">
+														</div>
+													</div>
+												</div>
+												<div class="popup-form__footer">
+													<div class="popup-form__submit">
+														<button class="popup-form__button" type="submit">Отправить заявку</button>
+														<input type="hidden" name="submit" value="callback-2-submit">
+													</div>
+													<div class="popup-form__private">Нажимая на кнопку, вы даете согласие на <a href="#">обработку своих персональных данных</a>.</div>
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="popup-form popup-form-goback">
+										<div class="popup-form__wrap">
+											<form class="form popup-form__form js-feedback-submit" method="POST" action="">
+												<div class="popup-form__header">
+													<div class="popup-form__logo"><img src="about-desc_files/logo.svg" loading="lazy"></div>
+													<div class="popup-form__title-2">Вы действительно хотите прервать запись?</div>
+													<div class="popup-form__close js-popup-close">
+														<div></div>
+													</div>
+												</div>
+												<div class="popup-form__body">
+													<div class="popup-form__content">
+														<div class="popup-form__caption">Если у вас возникли вопросы, позвоните нам по телефону:</div>
+														<div class="popup-form__phone"><a href="tel:+74954325644">+7 (495) 432-56-44</a></div>
+													</div>
+												</div>
+												<div class="popup-form__footer">
+													<div class="popup-form__buttons">
+														<div class="popup-form__cancel js-popup-close">Прервать</div>
+														<div class="popup-form__continue">Продолжить</div>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="popup-form popup-form-action">
+										<div class="popup-form__wrap">
+											<form class="form popup-form__form js-feedback-submit" method="POST" action="">
+												<div class="popup-form__header">
+													<div class="popup-form__title">Акции в августе</div>
+													<div class="popup-form__subtitle">Срок акции с 01.08.2021 до 31.08.2021</div>
+													<div class="popup-form__close js-popup-close">
+														<div></div>
+													</div>
+												</div>
+												<div class="popup-form__body">
+													<div class="popup-form__banner">
+														<div class="popup-form__banner-text">Бесплатная консультация репродуктолога</div>
+														<div class="popup-form__banner-picture">
+															<picture> <img src="about-desc_files/popup-form__banner-picture-1.png"></picture>
+														</div>
+													</div>
+													<div class="popup-form__box">
+														<div class="popup-form__row">
+															<input class="popup-form__input _name" name="name" placeholder="Ваше имя">
+														</div>
+														<div class="popup-form__row">
+															<input class="popup-form__input _phone" name="phone" placeholder="Ваш номер телефона *">
+														</div>
+													</div>
+												</div>
+												<div class="popup-form__footer">
+													<div class="popup-form__submit">
+														<button class="popup-form__button" type="submit">Жду звонка</button>
+														<input type="hidden" name="submit" value="callback-submit">
+													</div>
+													<div class="popup-form__private">Нажимая на кнопку, вы даете согласие на <a href="#">обработку своих персональных данных</a></div>
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="popup-form popup-form-feedback">
+										<div class="popup-form__wrap">
+											<form class="form popup-form__form js-feedback-submit" method="POST" action="">
+												<div class="popup-form__header">
+													<div class="popup-form__logo"><img src="about-desc_files/logo.svg" loading="lazy"></div>
+													<div class="popup-form__title">ХОТИТЕ, МЫ ВАМ ПЕРЕЗВОНИМ?</div>
+													<div class="popup-form__close js-popup-close">
+														<div></div>
+													</div>
+												</div>
+												<div class="popup-form__body">
+													<div class="popup-form__box">
+														<div class="popup-form__row">
+															<div class="form__cols">
+																<div class="form__col">
+																	<div class="form__input">
+																		<div class="form__icon">
+																			<div class="i-form-name"></div>
+																		</div>
+																		<input class="popup-form__input _name" name="name" placeholder="Ваше имя">
+																		<div class="form__error i-err"></div>
+																	</div>
+																</div>
+																<div class="form__col">
+																	<div class="form__input">
+																		<div class="form__icon">
+																			<div class="i-form-phone"></div>
+																		</div>
+																		<input class="popup-form__input _phone" name="phone" placeholder="Ваш номер телефона *">
+																		<div class="form__error i-err"></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="popup-form__row">
+															<div class="form__row">
+																<div class="form__textarea">
+																	<div class="form__textarea-title">Ваше сообщение:</div>
+																	<textarea class="popup-form__input" name="msg" value="" placeholder=""></textarea>
+																</div>
+															</div>
+														</div>
+														<div class="popup-form__row">
+															<div class="popup-form__private">Нажимая на кнопку, вы даете согласие на <a href="#">обработку своих персональных данных</a></div>
+														</div>
+													</div>
+												</div>
+												<div class="popup-form__footer">
+													<div class="popup-form__submit">
+														<button class="popup-form__button" type="submit">
+															<div class="btn btn_red">
+																<div class="icon-border">
+																	<div class="i-form-submit"></div>
+																</div><span>Отправить заявку</span>
+															</div>
+														</button>
+														<input type="hidden" name="submit" value="callback-submit">
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="popup-form popup-form-reviews">
+										<div class="popup-form__wrap">
+											<form class="form popup-form__form js-feedback-submit" method="POST" action="">
+												<div class="popup-form__header">
+													<div class="popup-form__icon">
+														<div class="i-feed-blue"></div>
+													</div>
+													<div class="popup-form__title">Оставить отзыв</div>
+													<div class="popup-form__close js-popup-close">
+														<div></div>
+													</div>
+												</div>
+												<div class="popup-form__body">
+													<div class="popup-form__text">Общество с ограниченной ответственностью Клиника «Центр ЭКО» оказывает помощь в лечении всех форм мужского и женского бесплодия,</div>
+													<div class="popup-form__box">
+														<div class="popup-form__row">
+															<div class="form__cols">
+																<div class="form__col">
+																	<div class="form__input">
+																		<div class="form__icon">
+																			<div class="i-form-name"></div>
+																		</div>
+																		<input class="popup-form__input _name" name="name" placeholder="Ваше имя">
+																		<div class="form__error i-err"></div>
+																	</div>
+																</div>
+																<div class="form__col">
+																	<div class="form__input">
+																		<div class="form__icon">
+																			<div class="i-form-email"></div>
+																		</div>
+																		<input class="popup-form__input _email" name="email" placeholder="Ваша почта">
+																		<div class="form__error i-err"></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="popup-form__row">
+															<div class="form__row">
+																<div class="form__textarea">
+																	<div class="form__textarea-title">Ваш отзыв:</div>
+																	<textarea class="popup-form__input" name="msg" value="" placeholder=""></textarea>
+																</div>
+															</div>
+														</div>
+														<div class="popup-form__row">
+															<div class="popup-form__private">
+																<div class="form__checkbox form__checkbox_dark">
+																	<input class="form__checkbox-input _cb-req" type="checkbox" name="private" id="private-popup-3" checked="checked">
+																	<label class="form__checkbox-label fs-12" for="private-popup-3">Я принимаю <a href="http://localhost:3000/about-desc/terms.html">Соглашение о конфиденциальности личной информации</a> , даю согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности.</label>
+																	<div class="form__error i-err">Ошибка</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="popup-form__footer">
+													<div class="popup-form__submit">
+														<button class="popup-form__button" type="submit">
+															<div class="btn btn_red">
+																<div class="icon-border">
+																	<div class="i-form-submit"></div>
+																</div><span>Отправить отзыв</span>
+															</div>
+														</button>
+														<input type="hidden" name="submit" value="review-submit">
+													</div>
+												</div>
+												<div class="form__loading">
+													<div class="form__loading-bg">Отправка<br>данных...</div>
+												</div>
+											</form>
+										</div>
+									</div>
+						<!--+question-form()-->
+						<!--+feedback-doctor-form()-->
+						<!--+success-form()-->
+									<div class="popup-form popup-form-search">
+										<div class="popup-form__wrap">
+											<div class="popup-form__form">
+												<div class="mobile-search">
+													<div class="mobile-search__wrap">
+														<div class="mobile-search__goback js-popup-close"></div>
+														<div class="mobile-search__box">
+															<div>
+																<input class="mobile-search__input" id="mobile-search" type="text" name="s" placeholder="Поиск по сайту">
+															</div>
+															<div class="mobile-search__reset"></div>
+														</div>
+														<div class="mobile-search__result"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="popup-form popup-form-menu">
+										<div class="popup-info">
+											<div class="popup-form__close js-popup-close">
+												<div></div>
+											</div>
+											<div class="popup-info__body">
+												<div class="popup-info__menu"><a class="js-goto js-popup-close" href="#eko">Об Эко</a><a class="js-goto js-popup-close" href="#about">О клинике</a><a class="js-goto js-popup-close" href="#programs">Программы</a><a class="js-goto js-popup-close" href="#price">Цены</a><a class="js-goto js-popup-close" href="#reviews">Отзывы</a></div>
+											</div>
+										</div>
+									</div>
+									<div class="popup-form popup-form-worktime">
+										<div class="popup-form__wrap">
+											<div class="popup-form__form popup-form__form_bg-white">
+												<div class="popup-info__header"><img class="popup-info__icon" src="about-desc_files/clock.svg"><img class="popup-info__logo" src="about-desc_files/logo_002.svg">
+													<div class="popup-form__close js-popup-close">
+														<div></div>
+													</div>
+												</div>
+												<div class="popup-info__body">
+													<div class="popup-info__title">Время работы:</div>
+													<div class="popup-info__text">
+														Пн-пт: <span>9:00 - 21:00</span><br>
+														Сб: <span>9:00 - 20:00</span><br>
+														Вс: <span>9:00 - 19:00</span>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="popup-form popup-form-modal">
+										<div class="popup-form__wrap">
+											<div class="popup-form__form popup-form__form_bg-white">
+												<div class="popup-info__header"><img class="popup-info__icon" src="about-desc_files/info.svg">
+													<div class="popup-form__close js-popup-close">
+														<div></div>
+													</div>
+												</div>
+												<div class="popup-info__body"></div>
+											</div>
+										</div>
+									</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+</body></html>

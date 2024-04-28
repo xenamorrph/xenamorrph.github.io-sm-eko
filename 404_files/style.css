@@ -1,0 +1,139 @@
+.b-404 {
+  position: relative;
+  background-color: #F3F5D6;
+}
+.b-404__container {
+  display: flex;
+  justify-content: space-between;
+}
+.b-404__text {
+  position: relative;
+  width: 60%;
+  padding: 75px 0 190px 0;
+  border-radius: 0 0 200px 0;
+  color: black;
+}
+.b-404__text a {
+  color: white;
+}
+.b-404__text a.button {
+  display: inline-block;
+}
+.b-404__title {
+  margin-bottom: 50px;
+}
+.b-404__title h1,
+.b-404__title span {
+  font-size: 118px;
+  font-weight: bold;
+}
+.b-404__title p {
+  font-size: 38px;
+}
+.b-404__button {
+  display: inline-block;
+  padding: 10px 50px;
+  min-height: 42px;
+  background-color: #13AB7B;
+  color: #fff;
+  border-radius: 40px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.b-404__button:hover {
+  background-color: #28926E;
+}
+.b-404__image {
+  margin-top: auto;
+}
+.b-404__image picture img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+@media all and (max-width: 1400px) {
+  .b-404__title h1,
+  .b-404__title span {
+    font-size: 100px;
+  }
+  .b-404__title p {
+    font-size: 35px;
+  }
+}
+@media all and (max-width: 1150px) {
+  .b-404__title {
+    margin-bottom: 40px;
+  }
+  .b-404__title h1,
+  .b-404__title span {
+    font-size: 80px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .b-404__container {
+    flex-direction: column;
+  }
+  .b-404__text {
+    width: 100%;
+    padding: 70px 0px;
+    position: relative;
+  }
+  .b-404__title {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 40px;
+  }
+  .b-404__title h1,
+  .b-404__title span {
+    font-size: 100px;
+  }
+  .b-404__title p {
+    font-size: 38px;
+  }
+  .b-404__image {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+@media all and (max-width: 768px) {
+  .b-404 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .b-404__text {
+    padding: 30px 0px 30px 0px;
+  }
+  .b-404__title {
+    margin-bottom: 20px;
+  }
+  .b-404__title h1,
+  .b-404__title span {
+    font-size: 60px;
+  }
+  .b-404__title p {
+    font-size: 30px;
+  }
+  .b-404__button {
+    padding: 10px;
+    font-size: 16px;
+  }
+  .b-404__image {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media all and (max-width: 480px) {
+  .b-404__text {
+    padding: 30px 0px;
+  }
+  .b-404__title h1,
+  .b-404__title span {
+    font-size: 40px;
+  }
+  .b-404__title p {
+    font-size: 20px;
+    margin-top: 0;
+  }
+}
